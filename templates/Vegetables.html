@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegetables</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bgnav">
+        <div class="container-fluid">
+            <img src="../static/Cart Logo/Food-Pantry-Logo.png" class="logo" alt="Not Found" height="100px" width="100px">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown dropdown">
+                <a class="nav-link dropdown-toggle color" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Fruits</a></li>
+                  <li><a class="dropdown-item" href="#">Vegetables</a></li>
+                  <li><a class="dropdown-item" href="#">Beverages</a></li>
+                  <li><a class="dropdown-item" href="#">Snacks</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex searchdiv">
+              <input class="form-control me-2 inpsearch" type="search" placeholder="What are you looking for?" aria-label="Search">
+              <button class="btn  search" type="submit">Search</button>
+            </form>
+            <button style="font-size:20px" class="cart">Cart<i class="fa fa-shopping-cart "></i></button>
+         </div>
+        </div>
+      </nav>
+       
+
+      <!--Main Section-->
+
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12">
+                  <h1 class="text-center text-capitalize">Featured Products</h1>
+              </div>
+          </div>
+    
+          <hr>
+        <div class="container-fluid">
+          <div class="row">
+              <div class="col-lg-3">
+                <div class="card" style="width: 16rem;">
+                    <img src="../static/Vegetables/Beans.webp" class="card-img-top" alt="..." height="250px">
+                    <hr>
+                    <div class="card-body">
+                      <h5 class="card-title">Beans</h5>
+                      <p class="card-text">MRP : 250g - 23Rs  <p>Quantity : <input type="number" name="mango" id="mango"></p></p>
+                      <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="card" style="width: 16rem;">
+                    <img src="../static/Vegetables/Beetroot.webp" class="card-img-top" alt="..." height="250px">
+                    <hr>
+                    <div class="card-body">
+                      <h5 class="card-title">Beetroot</h5>
+                      <p class="card-text">MRP : 500g - 12Rs  <p>Quantity : <input type="number" name="apple" id="apple"></p></p>
+                      <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="card" style="width: 16rem;">
+                    <img src="../static/Vegetables/Brinjal.webp" class="card-img-top" alt="..." height="250px">
+                    <hr>
+                    <div class="card-body">
+                      <h5 class="card-title">Brinjal</h5>
+                      <p class="card-text">MRP : 500g - 12Rs  <p>Quantity : <input type="number" name="guava" id="guava"></p></p>
+                      <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="card" style="width: 16rem;">
+                    <img src="../static/Vegetables/Brocolli.webp" class="card-img-top" alt="..." height="250px">
+                    <hr>
+                    <div class="card-body">
+                      <h5 class="card-title">Brocolli</h5>
+                      <p class="card-text">MRP : 250g - 28Rs  <p>Quantity : <input type="number" name="orange" id="orange"></p></p>
+                      <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+
+
+
+   <!--2nd Row -->
+      <br>
+      <div class="container">
+    
+      <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3">
+              <div class="card" style="width: 16rem;">
+                  <img src="../static/Vegetables/Cabbage.webp" class="card-img-top" alt="..." height="250px">
+                  <hr>
+                  <div class="card-body">
+                    <h5 class="card-title">Cabbage</h5>
+                    <p class="card-text">MRP : 1pc - 12Rs  <p>Quantity : <input type="number" name="mango" id="mango"></p></p>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card" style="width: 16rem;">
+                  <img src="../static/Vegetables/Carrot.webp" class="card-img-top" alt="..." height="250px">
+                  <hr>
+                  <div class="card-body">
+                    <h5 class="card-title">Carrot</h5>
+                    <p class="card-text">MRP : 500g - 36Rs  <p>Quantity : <input type="number" name="apple" id="apple"></p></p>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card" style="width: 16rem;">
+                  <img src="../static/Vegetables/Cauliflower.webp" class="card-img-top" alt="..." height="250px">
+                  <hr>
+                  <div class="card-body">
+                    <h5 class="card-title">Cauliflower</h5>
+                    <p class="card-text">MRP : 500 - 17Rs  <p>Quantity : <input type="number" name="guava" id="guava"></p></p>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card" style="width: 16rem;">
+                  <img src="../static/Vegetables/Chilli.webp" class="card-img-top" alt="..." height="250px">
+                  <hr>
+                  <div class="card-body">
+                    <h5 class="card-title">Chilli</h5>
+                    <p class="card-text">MRP : 250g - 17.5Rs  <p>Quantity : <input type="number" name="orange" id="orange"></p></p>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+    <!--3rd Row -->
+    <br>
+    <div class="container">
+  
+    <div class="container-fluid">
+      <div class="row">
+          <div class="col-lg-3">
+            <div class="card" style="width: 16rem;">
+                <img src="../static/Vegetables/Coriander Leaves.webp" class="card-img-top" alt="..." height="250px">
+                <hr>
+                <div class="card-body">
+                  <h5 class="card-title">Coriander Leaves</h5>
+                  <p class="card-text">MRP : 100g - 10Rs  <p>Quantity : <input type="number" name="mango" id="mango"></p></p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card" style="width: 16rem;">
+                <img src="../static/Vegetables/Cucumber.webp" class="card-img-top" alt="..." height="250px">
+                <hr>
+                <div class="card-body">
+                  <h5 class="card-title">Cucumber</h5>
+                  <p class="card-text">MRP : 500g - 24.75Rs  <p>Quantity : <input type="number" name="apple" id="apple"></p></p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card" style="width: 16rem;">
+                <img src="../static/Vegetables/Garlic.webp" class="card-img-top" alt="..." height="250px">
+                <hr>
+                <div class="card-body">
+                  <h5 class="card-title">Garlic</h5>
+                  <p class="card-text">MRP : 250g - 31.25Rs  <p>Quantity : <input type="number" name="guava" id="guava"></p></p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card" style="width: 16rem;">
+                <img src="../static/Vegetables/Ginger.webp" class="card-img-top" alt="..." height="250px">
+                <hr>
+                <div class="card-body">
+                  <h5 class="card-title">Ginger</h5>
+                  <p class="card-text">MRP : 250g - 10Rs  <p>Quantity : <input type="number" name="orange" id="orange"></p></p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  </div>
+
+
+
+
+
+  <!--4th Row -->
+  <br>
+  <div class="container">
+
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-3">
+          <div class="card" style="width: 16rem;">
+              <img src="../static/Vegetables/LadiesFinger.webp" class="card-img-top" alt="..." height="250px">
+              <hr>
+              <div class="card-body">
+                <h5 class="card-title">Ladies Finger/h5>
+                <p class="card-text">MRP : 500g - 11.50Rs  <p>Quantity : <input type="number" name="mango" id="mango"></p></p>
+                <a href="#" class="btn btn-primary">Add to Cart</a>
+              </div>
+            </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card" style="width: 16rem;">
+              <img src="../static/Vegetables/Lemon.webp" class="card-img-top" alt="..." height="250px">
+              <hr>
+              <div class="card-body">
+                <h5 class="card-title">Lemon</h5>
+                <p class="card-text">MRP : 250g - 20Rs  <p>Quantity : <input type="number" name="apple" id="apple"></p></p>
+                <a href="#" class="btn btn-primary">Add to Cart</a>
+              </div>
+            </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card" style="width: 16rem;">
+              <img src="../static/Vegetables/Methi.webp" class="card-img-top" alt="..." height="250px">
+              <hr>
+              <div class="card-body">
+                <h5 class="card-title">Methi</h5>
+                <p class="card-text">MRP : 100g - 10Rs  <p>Quantity : <input type="number" name="guava" id="guava"></p></p>
+                <a href="#" class="btn btn-primary">Add to Cart</a>
+              </div>
+            </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card" style="width: 16rem;">
+              <img src="../static/Vegetables/Onion.webp" class="card-img-top" alt="..." height="250px">
+              <hr>
+              <div class="card-body">
+                <h5 class="card-title">Onion</h5>
+                <p class="card-text">MRP : 1kg - 25Rs  <p>Quantity : <input type="number" name="orange" id="orange"></p></p>
+                <a href="#" class="btn btn-primary">Add to Cart</a>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+<!--5th Row -->
+  <br>
+  <div class="container">
+
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-3">
+          <div class="card" style="width: 16rem;">
+              <img src="../static/Vegetables/Potato.webp" class="card-img-top" alt="..." height="250px">
+              <hr>
+              <div class="card-body">
+                <h5 class="card-title">Potato</h5>
+                <p class="card-text">MRP : 1kg - 21Rs  <p>Quantity : <input type="number" name="mango" id="mango"></p></p>
+                <a href="#" class="btn btn-primary">Add to Cart</a>
+              </div>
+            </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card" style="width: 16rem;">
+              <img src="../static/Vegetables/Radish.webp" class="card-img-top" alt="..." height="250px">
+              <hr>
+              <div class="card-body">
+                <h5 class="card-title">Radish</h5>
+                <p class="card-text">MRP : 500g - 13Rs  <p>Quantity : <input type="number" name="apple" id="apple"></p></p>
+                <a href="#" class="btn btn-primary">Add to Cart</a>
+              </div>
+            </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card" style="width: 16rem;">
+              <img src="../static/Vegetables/Spinach.webp" class="card-img-top" alt="..." height="250px">
+              <hr>
+              <div class="card-body">
+                <h5 class="card-title">Spinach</h5>
+                <p class="card-text">MRP : 250g - 26Rs  <p>Quantity : <input type="number" name="guava" id="guava"></p></p>
+                <a href="#" class="btn btn-primary">Add to Cart</a>
+              </div>
+            </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card" style="width: 16rem;">
+              <img src="../static/Vegetables/SpringOnion.webp" class="card-img-top" alt="..." height="250px">
+              <hr>
+              <div class="card-body">
+                <h5 class="card-title">Spring Onion</h5>
+                <p class="card-text">MRP : 100g - 14Rs  <p>Quantity : <input type="number" name="orange" id="orange"></p></p>
+                <a href="#" class="btn btn-primary">Add to Cart</a>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+<!--6th Row -->
+<br>
+<div class="container">
+
+<div class="container-fluid">
+  <div class="row">
+      <div class="col-lg-3">
+        <div class="card" style="width: 16rem;">
+            <img src="../static/Vegetables/Sprouts.webp" class="card-img-top" alt="..." height="250px">
+            <hr>
+            <div class="card-body">
+              <h5 class="card-title">Sprouts</h5>
+              <p class="card-text">MRP : 200g - 27Rs  <p>Quantity : <input type="number" name="mango" id="mango"></p></p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="card" style="width: 16rem;">
+            <img src="../static/Vegetables/Sweet Potato.webp" class="card-img-top" alt="..." height="250px">
+            <hr>
+            <div class="card-body">
+              <h5 class="card-title">Sweet Potato</h5>
+              <p class="card-text">MRP : 500g - 20Rs  <p>Quantity : <input type="number" name="apple" id="apple"></p></p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="card" style="width: 16rem;">
+            <img src="../static/Vegetables/Tamarind.webp" class="card-img-top" alt="..." height="250px">
+            <hr>
+            <div class="card-body">
+              <h5 class="card-title">Tamarind</h5>
+              <p class="card-text">MRP : 500g - 119Rs  <p>Quantity : <input type="number" name="guava" id="guava"></p></p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="card" style="width: 16rem;">
+            <img src="../static/Vegetables/Tomato.webp" class="card-img-top" alt="..." height="250px">
+            <hr>
+            <div class="card-body">
+              <h5 class="card-title">Tomato</h5>
+              <p class="card-text">MRP : 1kg - 18Rs  <p>Quantity : <input type="number" name="orange" id="orange"></p></p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+
+
+<!-- hover effect animatin -->
+  <script>
+    $(document).ready(function(){
+      $('.col-lg-3').hover(
+        function(){
+          $(this).animate({
+            marginTop:"-=1%",
+          },200);
+        },
+
+        function(){
+          $(this).animate({
+            marginTop:"=0%";
+          },200);
+        }
+      );
+
+    });
+  </script>
+     
+
+</body>
+</html>
