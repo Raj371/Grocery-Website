@@ -9,9 +9,6 @@
 .cart{
     margin-right: 30px;
 }
-.searchdiv{
-    margin-right: 150px;
-}
 .inpsearch{
     width: 600px;
 }
@@ -43,4 +40,75 @@ body{
 }
 .Dropdown{
     color: white;
+}
+.searchnav{
+    margin-left: 5%;
+}
+@media only screen and (min-width:760px) and (max-width:990px) {
+    .responsive{
+        width:70%;
+    }
+    
+}
+@media only screen and (min-width:600px) and (max-width:767px) {
+    .responsive1{
+        font-size: 12px;
+    }
+    
+}
+@media only screen and (min-width:600px) and (max-width:767px) {
+    .responsive2{
+        font-size: 10px;
+    }
+    
+}
+
+@media only screen and (min-width:600px) and (max-width:767px) {
+    .responsive{
+        width: 60%;
+    }
+    
+}
+@media only screen and (min-width:600px) and (max-width:767px) {
+    .responsive4{
+        font-size: 7px; 
+    }
+    
+}
+@media only screen and (min-width:600px) and (max-width:767px) {
+    .responsive5{
+        height: 300px;
+    }    
+}
+@media only screen and (min-width:600px) and (max-width:767px) {
+    .responsive6{
+        height: 310px;
+    }    
+}
+@media only screen and (min-width:575px) and (max-width:599px) {
+    .responsive1{
+        font-size: 10px;
+    }    
+}
+@media only screen and (min-width:575px) and (max-width:599px) {
+    .responsive2{
+        font-size: 8px;
+    }    
+}
+@media only screen and (min-width:575px) and (max-width:599px) {
+    .responsive{
+        width: 30%;
+    }    
+}
+@media only screen and (min-width:575px) and (max-width:599px) {
+    .responsive4{
+        font-size: 5px;
+        
+
+    }    
+}
+@media only screen and (min-width:500px) and (max-width:575px) {
+    .responsive7{
+        height: 270px;
+    }    
 }

@@ -11,7 +11,7 @@
 </head>
 <body>
   <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light bgnav sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bgnav">
         <div class="container-fluid">
             <img src="../static/Cart Logo/Logo.jpg" class="logo" alt="Not Found" height="100px" width="100px">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,7 +25,7 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="/Grocery1">Home</a></li>
-                  <li><a class="dropdown-item" href="/Fruits">Fruits</a></li>
+                  <li><a class="dropdown-item" href="/Fruits" >Fruits</a></li>
                   <li><a class="dropdown-item" href="/Vegetables">Vegetables</a></li>
                   <li><a class="dropdown-item" href="/Beverages">Beverages</a></li>
                   <li><a class="dropdown-item" href="#">Snacks</a></li>
@@ -33,21 +33,21 @@
                 </ul>
               </li>
             </ul>
+            <form class="d-flex">
+              <input class="form-control me-2 inpsearch" type="search" placeholder="What are you looking for?" aria-label="Search" >
+              <button class="btn  search" type="submit">Search</button>
+            </form>
+            <button style="font-size:20px;" class="cart">Cart<i class="fa fa-shopping-cart "></i></button>
+            <button onclick="change()" style="font-size:20px;" class="cart">Logout</button>
             
-            <button style="font-size:20px;margin-right: 5%;" onclick="change()">Logout</button>
-            <button style="font-size:20px" class="cart">Cart<i class="fa fa-shopping-cart "></i></button>
          </div>
         </div>
       </nav>
 
 <!--Main Section-->
-
 <div class="container1">
-  
   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-    
   <div class="carousel-indicators">
-    
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -100,7 +100,7 @@
       </div>
       <div class="col-lg-6">
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-6 col-md-6">
             <div class="card" style="width: 250px;height: 220px;">
               <img src="../static/Fruits/Guava.webp" class="card-img-top " alt="..." height="180px" width="150px">
               <div class="card-body">
@@ -108,7 +108,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 col-md-6">
             <div class="card" style="width: 250px;height: 220px;">
               <img src="../static/Fruits/Mango.webp" class="card-img-top " alt="..." height="180px" width="150px">
               <div class="card-body">
@@ -118,7 +118,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-6 col-md-6">
             <div class="card" style="width: 250px;height: 220px;margin-top: 10px;" >
               <img src="../static/Fruits/Orange.webp" class="card-img-top " alt="..." height="180px" width="150px">
               <div class="card-body">
@@ -127,7 +127,7 @@
             </div>
 
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 col-md-6">
             <div class="card" style="width: 250px;height: 220px;margin-top: 10px;" >
               <img src="../static/Fruits/Dragon Fruit.webp" class="card-img-top " alt="..." height="180px" width="150px">
               <div class="card-body">
