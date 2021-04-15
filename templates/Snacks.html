@@ -20,27 +20,30 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item dropdown dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               <span class="Dropdown">SHOP BY CATEGORY</span>
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="/Grocery1">Home</a></li>
-              <li><a class="dropdown-item" href="/Fruits">Fruits</a></li>
+              <li><a class="dropdown-item" href="/Fruits" >Fruits</a></li>
               <li><a class="dropdown-item" href="/Vegetables">Vegetables</a></li>
               <li><a class="dropdown-item" href="/Beverages">Beverages</a></li>
               <li><a class="dropdown-item" href="#">Snacks</a></li>
+
             </ul>
           </li>
         </ul>
-        <form class="d-flex searchdiv">
-          <input class="form-control me-2 inpsearch" type="search" placeholder="What are you looking for?" aria-label="Search">
+        <form class="d-flex searchres" style="margin-right: 20%;">
+          <input class="form-control me-2" style="width: 400px;" type="search" placeholder="Search" aria-label="Search" >
           <button class="btn  search" type="submit">Search</button>
         </form>
-        <button style="font-size:20px" class="cart">Cart<i class="fa fa-shopping-cart "></i></button>
+        <br>
+        <button style="font-size:20px; background-color: black;color: white;" class="cart">Cart<i class="fa fa-shopping-cart "></i></button>
+        <button onclick="change()" style="font-size:20px; background-color: black;color: white;"  class="cart">Logout</button>
+        
      </div>
     </div>
   </nav>
-   
 
       <!--Main Section-->
 
@@ -60,7 +63,7 @@
                     <hr>
                     <div class="card-body">
                       <h5 class="card-title responsive1">Maggi</h5>
-                      <p class="card-text responsive2">MRP : 12Rs per pack <p>Quantity : <input type="number" class="responsive" min="1" name="maggi" id="maggi"></p></p>
+                      <p class="card-text responsive2">MRP : 15Rs <br> Quantity : <input type="number" class="responsive" min="1" name="maggi" id="maggi"></p></p>
                       <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
                     </div>
                   </div>
@@ -71,7 +74,7 @@
                     <hr>
                     <div class="card-body">
                       <h5 class="card-title responsive1">Soya Sticks</h5>
-                      <p class="card-text responsive2">MRP : 50Rs <p>Quantity : <input type="number" class="responsive" min="1" name="Soya" id="Soya"></p></p>
+                      <p class="card-text responsive2">MRP : 50Rs <br> Quantity : <input type="number" class="responsive" min="1" name="Soya" id="Soya"></p></p>
                       <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
                     </div>
                   </div>
@@ -82,7 +85,7 @@
                     <hr>
                     <div class="card-body">
                       <h5 class="card-title responsive1">Moongdal</h5>
-                      <p class="card-text responsive2">MRP : 70Rs  <p>Quantity : <input type="number" class="responsive" min="1" name="moongdal" id="moongdal"></p></p>
+                      <p class="card-text responsive2">MRP : 70Rs  <br> Quantity : <input type="number" class="responsive" min="1" name="moongdal" id="moongdal"></p></p>
                       <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
                     </div>
                   </div>
@@ -93,7 +96,7 @@
                     <hr>
                     <div class="card-body">
                       <h5 class="card-title responsive1">Tasty Nuts</h5>
-                      <p class="card-text responsive2">MRP : 40Rs <p>Quantity : <input type="number" class="responsive" min="1" name="orange" id="orange"></p></p>
+                      <p class="card-text responsive2">MRP : 40Rs <br> Quantity : <input type="number" class="responsive" min="1" name="orange" id="orange"></p></p>
                       <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
                     </div>
                   </div>
@@ -111,45 +114,45 @@
       <div class="container-fluid">
         <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-3">
-              <div class="card responsive5" >
+              <div class="card responsive6" >
                   <img src="../static/Snacks/littlehearts.jpg" class="card-img-top responsive7" alt="..." height="230px">
                   <hr>
                   <div class="card-body">
                     <h5 class="card-title responsive1">Little Hearts Biscuits</h5>
-                    <p class="card-text responsive2">MRP : 10Rs per pack <p>Quantity : <input type="number" class="responsive" min="1" name="heart" id="heart"></p></p>
+                    <p class="card-text responsive2">MRP : 10Rs per pack <br> Quantity : <input type="number" class="responsive" min="1" name="heart" id="heart"></p>
                     <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
                   </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3">
-              <div class="card responsive5" >
+              <div class="card responsive6" >
                   <img src="../static/Snacks/corn flakes.jpg" class="card-img-top responsive7" alt="..." height="230px">
                   <hr>
                   <div class="card-body">
-                    <h5 class="card-title responsive1">Corn flakes</h5>
-                    <p class="card-text responsive2">MRP : 200Rs <p>Quantity : <input type="number" class="responsive" min="1" name="cornflakes" id="cornflakes"></p></p>
+                    <h5 class="card-title responsive1">Cornflakes(Kellogs)</h5>
+                    <p class="card-text responsive2">MRP : 200Rs per pack <br> Quantity : <input type="number" class="responsive" min="1" name="cornflakes" id="cornflakes"></p>
                     <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
                   </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3">
-              <div class="card responsive5" >
+              <div class="card responsive6" >
                   <img src="../static/Snacks/Lays.jpg" class="card-img-top responsive7" alt="..." height="230px">
                   <hr>
                   <div class="card-body">
                     <h5 class="card-title responsive1">Cream N' Onion Chips</h5>
-                    <p class="card-text responsive2">MRP : 30Rs per pack <p>Quantity : <input type="number" class="responsive" min="1" name="laysaco" id="laysaco"></p></p>
+                    <p class="card-text responsive2">MRP : 30Rs per pack <br> Quantity : <input type="number" class="responsive" min="1" name="laysaco" id="laysaco"></p>
                     <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
                   </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3">
-              <div class="card responsive5" >
+              <div class="card responsive6" >
                   <img src="../static/Snacks/hakka noodles.jpg" class="card-img-top responsive7" alt="..." height="230px">
                   <hr>
                   <div class="card-body">
-                    <h5 class="card-title responsive1">Hakka Noodles</h5>
-                    <p class="card-text responsive2">MRP : 20Rs per pack <p>Quantity : <input type="number" class="responsive" min="1" name="noodle" id="noodle"></p></p>
+                    <h5 class="card-title responsive1"> Veg Hakka Noodles</h5>
+                    <p class="card-text responsive2">MRP : 20Rs per pack <br> Quantity : <input type="number" class="responsive" min="1" name="noodle" id="noodle"></p>
                     <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
                   </div>
                 </div>
@@ -173,7 +176,7 @@
                 <hr>
                 <div class="card-body">
                   <h5 class="card-title responsive1">Dark Choco Biscuits</h5>
-                  <p class="card-text responsive2">MRP : 30Rs <p>Quantity : <input type="number" class="responsive" min="1" name="chocofills" id="chocofills"></p></p>
+                  <p class="card-text responsive2">MRP : 30Rs <br> Quantity : <input type="number" class="responsive" min="1" name="chocofills" id="chocofills"></p>
                   <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
                 </div>
               </div>
@@ -184,7 +187,7 @@
                 <hr>
                 <div class="card-body">
                   <h5 class="card-title responsive1">Yippee</h5>
-                  <p class="card-text responsive2">MRP : 10Rs per pack <p>Quantity : <input type="number" class="responsive" min="1" name="yippee" id="yippee"></p></p>
+                  <p class="card-text responsive2">MRP : 10Rs per pack <br> Quantity : <input type="number" class="responsive" min="1" name="yippee" id="yippee"></p>
                   <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
                 </div>
               </div>
@@ -195,7 +198,7 @@
                 <hr>
                 <div class="card-body">
                   <h5 class="card-title responsive1">Protein Bars</h5>
-                  <p class="card-text responsive2">MRP : 450Rs  <p>Quantity : <input type="number" class="responsive" min="1" name="protein" id="protein"></p></p>
+                  <p class="card-text responsive2">MRP : 450Rs per pack  <br> Quantity : <input type="number" class="responsive" min="1" name="protein" id="protein"></p>
                   <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
                 </div>
               </div>
@@ -205,8 +208,8 @@
                 <img src="../static/Snacks/popcorn.jpg" class="card-img-top responsive7" alt="..." height="230px">
                 <hr>
                 <div class="card-body">
-                  <h5 class="card-title responsive1">Buttery popcorn</h5>
-                  <p class="card-text responsive2">MRP : 500g - 60Rs  <p>Quantity : <input type="number" class="responsive" min="1" name="popcorn" id="popcorn"></p></p>
+                  <h5 class="card-title responsive1"> Popcorn</h5>
+                  <p class="card-text responsive2">MRP : 500g - 60Rs  <br> Quantity : <input type="number" class="responsive" min="1" name="popcorn" id="popcorn"></p>
                   <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
                 </div>
               </div>
@@ -230,8 +233,8 @@
               <img src="../static/Snacks/muesli.jpg" class="card-img-top responsive7" alt="..." height="230px">
               <hr>
               <div class="card-body">
-                <h5 class="card-title responsive1">Fruit N' Nut Muesli</h5>
-                <p class="card-text responsive2">MRP : 200Rs  <p>Quantity : <input type="number" class="responsive" min="1" name="muesli" id="muesli"></p></p>
+                <h5 class="card-title responsive1">Muesli</h5>
+                <p class="card-text responsive2">MRP : 200Rs  <br> Quantity : <input type="number" class="responsive" min="1" name="muesli" id="muesli"></p>
                 <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
               </div>
             </div>
@@ -242,7 +245,7 @@
               <hr>
               <div class="card-body">
                 <h5 class="card-title responsive1">Oats</h5>
-                <p class="card-text responsive2">MRP : 250Rs <p>Quantity : <input type="number" class="responsive" min="1" name="oats" id="oats"></p></p>
+                <p class="card-text responsive2">MRP : 250Rs <br> Quantity : <input type="number" class="responsive" min="1" name="oats" id="oats"></p>
                 <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
               </div>
             </div>
@@ -253,7 +256,7 @@
               <hr>
               <div class="card-body">
                 <h5 class="card-title responsive1">Jim Jam</h5>
-                <p class="card-text responsive2">MRP : 25Rs per pack <p>Quantity : <input type="number" class="responsive" min="1" name="moongdal" id="moongdal"></p></p>
+                <p class="card-text responsive2">MRP : 25Rs <br> Quantity : <input type="number" class="responsive" min="1" name="moongdal" id="moongdal"></p>
                 <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
               </div>
             </div>
@@ -264,7 +267,7 @@
               <hr>
               <div class="card-body">
                 <h5 class="card-title responsive1">Milk Bikis</h5>
-                <p class="card-text responsive2">MRP : 20Rs  <p>Quantity : <input type="number" class="responsive" min="1" name="milk" id="milk"></p></p>
+                <p class="card-text responsive2">MRP : 20Rs  <br> Quantity : <input type="number" class="responsive" min="1" name="milk" id="milk"></p>
                 <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
               </div>
             </div>
@@ -289,7 +292,7 @@
               <hr>
               <div class="card-body">
                 <h5 class="card-title responsive1">Aloo Bhujia</h5>
-                <p class="card-text responsive2">MRP : 85Rs  <p>Quantity : <input type="number" class="responsive" min="1" name="bhujia" id="bhujia"></p></p>
+                <p class="card-text responsive2">MRP : 85Rs  <br> Quantity : <input type="number" class="responsive" min="1" name="bhujia" id="bhujia"></p>
                 <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
               </div>
             </div>
@@ -300,7 +303,7 @@
               <hr>
               <div class="card-body">
                 <h5 class="card-title responsive1">Parle-G</h5>
-                <p class="card-text responsive2">MRP : 50Rs <p>Quantity : <input type="number" class="responsive" min="1" name="parleg" id="parleg"></p></p>
+                <p class="card-text responsive2">MRP : 50Rs <br> Quantity : <input type="number" class="responsive" min="1" name="parleg" id="parleg"></p>
                 <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
               </div>
             </div>
@@ -311,8 +314,8 @@
               <hr>
               <div class="card-body">
                 <h5 class="card-title responsive1">Oreo</h5>
-                <p class="card-text responsive2">MRP : 30Rs per pack  <p>Quantity : <input type="number" class="responsive" min="1" name="oreo" id="oreo"></p></p>
-                <a href="#" class="btn btn-primary">Add to Cart</a>
+                <p class="card-text responsive2">MRP : 30Rs  <br> Quantity : <input type="number" class="responsive" min="1" name="oreo" id="oreo"></p>
+                <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
               </div>
             </div>
         </div>
@@ -321,9 +324,9 @@
               <img src="../static/Snacks/sauce.jpg" class="card-img-top responsive7" alt="..." height="230px">
               <hr>
               <div class="card-body">
-                <h5 class="card-title responsive1">Tomato Ketchup</h5>
-                <p class="card-text responsive2">MRP : 1 kg - 120Rs  <p>Quantity : <input type="number" class="responsive" min="1" name="sauce" id="sauce"></p></p>
-                <a href="#" class="btn btn-primary">Add to Cart</a>
+                <h5 class="card-title responsive1">Ketchup</h5>
+                <p class="card-text responsive2">MRP:1kg-120Rs  <br> Quantity : <input type="number" class="responsive" min="1" name="sauce" id="sauce"></p>
+                <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
               </div>
             </div>
         </div>
@@ -345,8 +348,8 @@
             <hr>
             <div class="card-body">
               <h5 class="card-title responsive1">Hide & Seek</h5>
-              <p class="card-text responsive2">MRP : 30Rs  <p>Quantity : <input type="number" class="responsive" min="1" name="hidenseek" id="hidenseek"></p></p>
-              <a href="#" class="btn btn-primary">Add to Cart</a>
+              <p class="card-text responsive2">MRP : 1pack-30Rs<br> Quantity : <input type="number" class="responsive" min="1" name="hidenseek" id="hidenseek"></p>
+              <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
             </div>
           </div>
       </div>
@@ -356,8 +359,8 @@
             <hr>
             <div class="card-body">
               <h5 class="card-title responsive1">Grape Fruit</h5>
-              <p class="card-text responsive2">MRP : 1 kg - 500Rs <p>Quantity : <input type="number" class="responsive" min="1" name="chocos" id="chocos"></p></p>
-              <a href="#" class="btn btn-primary">Add to Cart</a>
+              <p class="card-text responsive2">MRP : 1 kg - 500Rs <br> Quantity : <input type="number" class="responsive" min="1" name="chocos" id="chocos"></p>
+              <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
             </div>
           </div>
       </div>
@@ -366,9 +369,9 @@
             <img src="../static/Snacks/cashewcookie.jpg" class="card-img-top responsive7" alt="..." height="230px">
             <hr>
             <div class="card-body">
-              <h5 class="card-title responsive1">Cashew cookies</h5>
-              <p class="card-text responsive2">MRP : 20Rs <p>Quantity : <input type="number" class="responsive" min="1" name="cashewcookie" id="cashewcookie"></p></p>
-              <a href="#" class="btn btn-primary">Add to Cart</a>
+              <h5 class="card-title responsive1">Good Day</h5>
+              <p class="card-text responsive2">MRP : 1pack-20Rs <br> Quantity : <input type="number" class="responsive" min="1" name="cashewcookie" id="cashewcookie"></p>
+              <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
             </div>
           </div>
       </div>
@@ -377,9 +380,9 @@
             <img src="../static/Snacks/jam.jpg" class="card-img-top responsive7" alt="..." height="230px">
             <hr>
             <div class="card-body">
-              <h5 class="card-title responsive1">Mixed Fruit Jam</h5>
-              <p class="card-text responsive2">MRP : 700 g - 160Rs <p>Quantity : <input type="number" class="responsive" min="1" name="jam" id="jam"></p></p>
-              <a href="#" class="btn btn-primary">Add to Cart</a>
+              <h5 class="card-title responsive1">Fruit Jam</h5>
+              <p class="card-text responsive2">MRP : 1kg - 120Rs <br> Quantity : <input type="number" class="responsive" min="1" name="jam" id="jam"></p>
+              <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
             </div>
           </div>
       </div>

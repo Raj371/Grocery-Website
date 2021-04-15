@@ -11,37 +11,39 @@
     <link rel="stylesheet" href="../static/CSS/style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bgnav">
-        <div class="container-fluid">
-            <img src="../static/Cart Logo/Logo.jpg" class="logo" alt="Not Found" height="100px" width="100px">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item dropdown dropdown">
-                <a class="nav-link dropdown-toggle"  href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <span class="Dropdown">SHOP BY CATEGORY</span>
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="/Grocery1">Home</a></li>
-                  <li><a class="dropdown-item" href="/Fruits">Fruits</a></li>
-                  <li><a class="dropdown-item" href="/Vegetables">Vegetables</a></li>
-                  <li><a class="dropdown-item" href="/Beverages">Beverages</a></li>
-                  <li><a class="dropdown-item" href="#">Snacks</a></li>
-                </ul>
-              </li>
+  <nav class="navbar navbar-expand-lg navbar-light bgnav">
+    <div class="container-fluid">
+        <img src="../static/Cart Logo/Logo.jpg" class="logo" alt="Not Found" height="100px" width="100px">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown dropdown">
+            <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="Dropdown">SHOP BY CATEGORY</span>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="/Grocery1">Home</a></li>
+              <li><a class="dropdown-item" href="/Fruits" >Fruits</a></li>
+              <li><a class="dropdown-item" href="/Vegetables">Vegetables</a></li>
+              <li><a class="dropdown-item" href="/Beverages">Beverages</a></li>
+              <li><a class="dropdown-item" href="#">Snacks</a></li>
+
             </ul>
-            <form class="d-flex searchdiv">
-              <input class="form-control me-2 inpsearch" type="search" placeholder="What are you looking for?" aria-label="Search">
-              <button class="btn search" type="submit">Search</button>
-            </form>
-            <button style="font-size:20px;" class="cart">Cart<i class="fa fa-shopping-cart "></i></button>
-            
-         </div>
-        </div>
-      </nav>
-       
+          </li>
+        </ul>
+        <form class="d-flex searchres" style="margin-right: 20%;">
+          <input class="form-control me-2" style="width: 400px;" type="search" placeholder="Search" aria-label="Search" >
+          <button class="btn  search" type="submit">Search</button>
+        </form>
+        <br>
+        <button style="font-size:20px; background-color: black;color: white;" class="cart">Cart<i class="fa fa-shopping-cart "></i></button>
+        <button onclick="change()" style="font-size:20px; background-color: black;color: white;"  class="cart">Logout</button>
+        
+     </div>
+    </div>
+  </nav>
 
       <!--Main Section-->
 
@@ -83,7 +85,7 @@
                     <hr>
                     <div class="card-body">
                       <h5 class="card- responsive1">Guava</h5>
-                      <p class="card-text responsive2">MRP : 1 kg - 70Rs <br> Quantity : <input type="number"class="responsive" min="1" name="guava" id="guava"></p>
+                      <p class="card-text responsive2">MRP : 500gm - 35 Rs <br> Quantity : <input type="number"class="responsive" min="1" name="guava" id="guava"></p>
                       <a href="#" class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></a>
                     </div>
                   </div>
@@ -139,7 +141,7 @@
                   <hr>
                   <div class="card-body">
                     <h5 class="card- responsive1">Amla</h5>
-                    <p class="card-text responsive2">MRP : 1 kg - 70Rs <br> Quantity : <input type="number" class="responsive" min="1" name="guava" id="guava"></p></p>
+                    <p class="card-text responsive2">MRP : 500gm - 35Rs <br> Quantity : <input type="number" class="responsive" min="1" name="guava" id="guava"></p></p>
                     <a href="#" class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></a>
                   </div>
                 </div>
@@ -207,7 +209,7 @@
                 <hr>
                 <div class="card-body">
                   <h5 class="card- responsive1">Raw Mango</h5>
-                  <p class="card-text responsive2">MRP : 1 kg - 80Rs <br> Quantity : <input type="number" class="responsive" min="1" name="orange" id="orange"></p>
+                  <p class="card-text responsive2">MRP : 1 dozen - 160 Rs <br> Quantity : <input type="number" class="responsive" min="1" name="orange" id="orange"></p>
                   <a href="#" class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></a>
                 </div>
               </div>
@@ -301,7 +303,7 @@
               <hr>
               <div class="card-body">
                 <h5 class="card- responsive1">Pomegranate</h5>
-                <p class="card-text responsive2">MRP : 1 kg - 150Rs <br> Quantity : <input type="number" class="responsive" min="1" name="apple" id="apple"></p>
+                <p class="card-text responsive2">MRP : 1 piece - 30Rs <br> Quantity : <input type="number" class="responsive" min="1" name="apple" id="apple"></p>
                 <a href="#" class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></a>
               </div>
             </div>
@@ -323,7 +325,7 @@
               <hr>
               <div class="card-body">
                 <h5 class="card- responsive1">Black Grapes</h5>
-                <p class="card-text responsive2">MRP : 1 kg - 90Rs <br> Quantity : <input type="number" class="responsive" min="1" name="orange" id="orange"></p>
+                <p class="card-text responsive2">MRP : 1 kg - 100 Rs <br> Quantity : <input type="number" class="responsive" min="1" name="orange" id="orange"></p>
                 <a href="#" class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></a>
               </div>
             </div>
@@ -346,7 +348,7 @@
             <hr>
             <div class="card-body">
               <h5 class="card- responsive1">Grapes</h5>
-              <p class="card-text responsive2">MRP : 1 kg - 80Rs <br> Quantity : <input type="number" class="responsive" min="1" name="mango" id="mango"></p>
+              <p class="card-text responsive2">MRP : 500 gm -  40Rs <br> Quantity : <input type="number" class="responsive" min="1" name="mango" id="mango"></p>
               <a href="#" class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></a>
             </div>
           </div>
