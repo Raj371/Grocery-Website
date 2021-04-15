@@ -9,9 +9,6 @@
 .cart{
     margin-right: 30px;
 }
-.inpsearch{
-    width: 600px;
-}
 .logo{
     margin-left: 30px;
 }
@@ -82,7 +79,7 @@ body{
 }
 @media only screen and (min-width:600px) and (max-width:767px) {
     .responsive6{
-        height: 310px;
+        height: 320px;
     }    
 }
 @media only screen and (min-width:575px) and (max-width:599px) {
@@ -97,7 +94,7 @@ body{
 }
 @media only screen and (min-width:575px) and (max-width:599px) {
     .responsive{
-        width: 30%;
+        width: 60%;
     }    
 }
 @media only screen and (min-width:575px) and (max-width:599px) {
@@ -110,5 +107,10 @@ body{
 @media only screen and (min-width:500px) and (max-width:575px) {
     .responsive7{
         height: 270px;
+    }    
+}
+@media only screen and (min-width:991px) and (max-width:1200px) {
+    .searchres{
+        width: 250px;
     }    
 }
