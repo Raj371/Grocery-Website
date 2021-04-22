@@ -59,4 +59,10 @@ def vegetables():
 @app.route('/Beverages')
 def beverages():
     return render_template("Beverages.html")
+@app.route('/Snacks')
+def snacks():
+    return render_template("Snacks.html")
+@app.route('/Cart')
+def cart():
+    return render_template("cart.html")
 app.run(debug=True)
