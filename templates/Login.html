@@ -39,7 +39,7 @@ Signup Form</div>
 <div class="field btn">
               <div class="btn-layer">
 </div>
-<input type="submit" value="Login" onsubmit="Loginform()">
+<input type="submit" value="Login" onclick="login()" onsubmit="Loginform()">
             </div>
 <div class="signup-link">
 Not a member? <a href="">Signup now</a></div>
@@ -89,30 +89,30 @@ Not a member? <a href="">Signup now</a></div>
         signupBtn.click();
         return false;
       });
-<!--      function Loginform(){-->
-<!--      var email=document.getElementById('email').value;-->
-<!--      if(email.indexOf('@')<=0){-->
-<!--      alert("invalid @ position");-->
-<!--      return false;-->
-<!--      }-->
-<!--      if((email.charAt(email.length-4)!='.') && (email.charAt(email.length-3)!='.')){-->
-<!--      alert("invalid . position");-->
-<!--      return false;-->
-<!--      }-->
-<!--      var Password=document.getElementById('password');-->
-<!--      if(Password.value.trim()==""){-->
-<!--      alert("Password should not be blank");-->
-<!--      return false;-->
-<!--      }-->
-<!--      if(Password.value.length<5){-->
-<!--      alert("Password should be minimum 5 characters");-->
-<!--      return false;-->
-<!--      }-->
-<!--      if(Password.value.length>12){-->
-<!--      alert("Password should be maximum 12 characters");-->
-<!--      return false;-->
-<!--      }-->
-<!--      }-->
+// <!--      function Loginform(){-->
+// <!--      var email=document.getElementById('email').value;-->
+// <!--      if(email.indexOf('@')<=0){-->
+// <!--      alert("invalid @ position");-->
+// <!--      return false;-->
+// <!--      }-->
+// <!--      if((email.charAt(email.length-4)!='.') && (email.charAt(email.length-3)!='.')){-->
+// <!--      alert("invalid . position");-->
+// <!--      return false;-->
+// <!--      }-->
+// <!--      var Password=document.getElementById('password');-->
+// <!--      if(Password.value.trim()==""){-->
+// <!--      alert("Password should not be blank");-->
+// <!--      return false;-->
+// <!--      }-->
+// <!--      if(Password.value.length<5){-->
+// <!--      alert("Password should be minimum 5 characters");-->
+// <!--      return false;-->
+// <!--      }-->
+// <!--      if(Password.value.length>12){-->
+// <!--      alert("Password should be maximum 12 characters");-->
+// <!--      return false;-->
+// <!--      }-->
+// <!--      }-->
       function Sign_Up_form(){
       var email=document.getElementById('mail').value;
       if(email.indexOf('@')<=0){
@@ -153,6 +153,21 @@ Not a member? <a href="">Signup now</a></div>
       if(mobileno.length!=10){
       alert("mobile number should be 10 digits");
       return false;
+      }
+      }
+
+      function login(){
+        let email=YashkShah;
+        let password=12345;
+      let e=document.getElementById('email').value;
+      let p=document.getElementById('password').value;
+      if(email==e && password==p){
+        alert("Logged in successfully");
+        window.location.href="Grocery1.html";
+      }
+      else{
+        alert("Incorrect email or password");
+        window.location.href="Login.html";
       }
       }
 </script>

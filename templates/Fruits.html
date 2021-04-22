@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    
+    <link rel="stylesheet" href="../static/CSS/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../static/CSS/style.css">
+
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bgnav">
@@ -24,22 +24,22 @@
               <span class="Dropdown">SHOP BY CATEGORY</span>
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="/Grocery1">Home</a></li>
-              <li><a class="dropdown-item" href="/Fruits" >Fruits</a></li>
-              <li><a class="dropdown-item" href="/Vegetables">Vegetables</a></li>
-              <li><a class="dropdown-item" href="/Beverages">Beverages</a></li>
-              <li><a class="dropdown-item" href="#">Snacks</a></li>
+              <li><a class="dropdown-item" href="Grocery1.html">Home</a></li>
+              <li><a class="dropdown-item" href="Fruits.html" >Fruits</a></li>
+              <li><a class="dropdown-item" href="Vegetables.html">Vegetables</a></li>
+              <li><a class="dropdown-item" href="Beverages.html">Beverages</a></li>
+              <li><a class="dropdown-item" href="Snacks.html">Snacks</a></li>
 
             </ul>
           </li>
         </ul>
         <form class="d-flex searchres" style="margin-right: 20%;">
           <input class="form-control me-2" style="width: 400px;" type="search" placeholder="Search" aria-label="Search" >
-          <button class="btn  search" type="submit">Search</button>
+          <button class="btn" type="submit" style="background-color: orange;color: white;">Search</button>
         </form>
         <br>
-        <button style="font-size:20px; background-color: black;color: white;" class="cart">Cart<i class="fa fa-shopping-cart "></i></button>
-        <button onclick="change()" style="font-size:20px; background-color: black;color: white;"  class="cart">Logout</button>
+        <a href="cart.html"><button style="font-size:20px; background-color: black;color: white;"  class="cart" id="cart">Cart<i class="fa fa-shopping-cart "></i></button></a>
+        <button style="font-size:20px; background-color: black;color: white;"  class="cart">Logout</button>
         
      </div>
     </div>
@@ -62,42 +62,43 @@
                     <img src="../static/Fruits/Mango.png" class="card-img-top responsive7" alt="..." height="230px">
                     <hr>
                     <div class="card-body">
-                      <h5 class="card- responsive1">Mango</h5>
-                      <p class="card-text responsive2">MRP : 1 dozen - 300Rs <br> Quantity : <input type="number"  min="1" name="mango" class="responsive" id="mango"></p>
-                      <a href="#" class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></a>
+                      <h5 class="card-title responsive1">Mango</h5>
+                      <p class="card-text responsive2">MRP : 1 dozen -<span class="productPrice"> 300</span>Rs <br> Quantity : <input type="number"  min="1" name="mango" class="responsive" id="Mango"></p>
+                      <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
                     </div>
                   </div>
               </div>
               <div class="col-lg-3 col-md-3 col-sm-3 ">
                 <div class="card responsive5" >
-                    <img src="../static/Fruits/Apple.png" class="card-img-top responsive7" alt="..." height="230px" >
+                    <img src="../static/Fruits/Apple.png" class="card-img-top responsive7 " alt="..." height="230px" >
                     <hr>
                     <div class="card-body">
-                      <h5 class="card- responsive1">Apple</h5>
-                      <p class="card-text responsive2">MRP : 1 dozen - 200Rs <br> Quantity : <input type="number" min="1" name="apple" id="apple" class="responsive"></p>
-                      <a href="#" class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></a>
+                      <h5 class="card-title responsive1">Apple</h5>
+                      <p class="card-text responsive2">MRP : 1 dozen -<span class="productPrice"> 200</span>Rs
+                         <br> Quantity : <input type="number" min="1" name="apple" id="Apple" class="responsive"></p>
+                      <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
                     </div>
                   </div>
               </div>
               <div class="col-lg-3 col-md-3 col-sm-3">
                 <div class="card responsive5" >
-                    <img src="../static/Fruits/Guava.png" class="card-img-top responsive7" alt="..." height="230px" >
+                    <img src="../static/Fruits/Guava.png" class="card-img-top responsive7 " alt="..." height="230px" >
                     <hr>
                     <div class="card-body">
-                      <h5 class="card- responsive1">Guava</h5>
-                      <p class="card-text responsive2">MRP : 500gm - 35 Rs <br> Quantity : <input type="number"class="responsive" min="1" name="guava" id="guava"></p>
-                      <a href="#" class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></a>
+                      <h5 class="card-title responsive1">Guava</h5>
+                      <p class="card-text responsive2">MRP : 500gm -<span class="productPrice"> 35</span> Rs <br> Quantity : <input type="number" class="responsive" min="1" name="guava" id="Guava"></p>
+                      <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
                     </div>
                   </div>
               </div>
               <div class="col-lg-3 col-md-3 col-sm-3">
                 <div class="card responsive5" >
-                    <img src="../static/Fruits/Orange.png" class="card-img-top responsive7" alt="..." height="230px">
+                    <img src="../static/Fruits/Orange.png" class="card-img-top responsive7 " alt="..." height="230px">
                     <hr>
                     <div class="card-body">
-                      <h5 class="card- responsive1">Orange</h5>
-                      <p class="card-text responsive2">MRP : 1 dozen -  50Rs <br> Quantity : <input type="number" class="responsive" min="1" name="orange" id="orange"></p>
-                      <a href="#" class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></a>
+                      <h5 class="card-title responsive1">Orange</h5>
+                      <p class="card-text responsive2">MRP : 1 dozen -<span class="productPrice">  50</span>Rs <br> Quantity : <input type="number" class="responsive" min="1" name="orange" id="Orange"></p>
+                      <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
                     </div>
                   </div>
               </div>
@@ -115,45 +116,45 @@
         <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-3">
               <div class="card responsive5">
-                  <img src="../static/Fruits/Dragon Fruit.png" class="card-img-top responsive7" alt="..." height="230px">
+                  <img src="../static/Fruits/Dragon Fruit.png" class="card-img-top responsive7 " alt="..." height="230px">
                   <hr>
                   <div class="card-body">
-                    <h5 class="card- responsive1">Dragon Fruit</h5>
-                    <p class="card-text responsive2">MRP : 1 piece - 70Rs  <br> Quantity : <input type="number" class="responsive"  min="1" name="mango" id="mango"></p>
-                    <a href="#" class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></a>
+                    <h5 class="card-title responsive1">Dragon Fruit</h5>
+                    <p class="card-text responsive2">MRP : 1 piece -<span class="productPrice"> 70</span>Rs  <br> Quantity : <input type="number" class="responsive"  min="1" name="mango" id="mango"></p>
+                    <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
                   </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3">
               <div class="card responsive5">
-                  <img src="../static/Fruits/Avocado.png" class="card-img-top responsive7" alt="..." height="230px">
+                  <img src="../static/Fruits/Avocado.png" class="card-img-top responsive7 " alt="..." height="230px">
                   <hr>
                   <div class="card-body">
-                    <h5 class="card- responsive1">Avacado</h5>
-                    <p class="card-text responsive2">MRP : 1 dozen - 200Rs <br> Quantity : <input type="number" class="responsive" min="1" name="apple" id="app"></p>                
-                     <a href="#" class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></a>
+                    <h5 class="card-title responsive1">Avacado</h5>
+                    <p class="card-text responsive2">MRP : 1 dozen -<span class="productPrice"> 200</span>Rs <br> Quantity : <input type="number" class="responsive" min="1" name="apple" id="app"></p>                
+                     <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
                   </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3">
               <div class="card responsive5">
-                  <img src="../static/Fruits/Amla.png" class="card-img-top responsive7" alt="..." height="230px">
+                  <img src="../static/Fruits/Amla.png" class="card-img-top responsive7 " alt="..." height="230px">
                   <hr>
                   <div class="card-body">
-                    <h5 class="card- responsive1">Amla</h5>
-                    <p class="card-text responsive2">MRP : 500gm - 35Rs <br> Quantity : <input type="number" class="responsive" min="1" name="guava" id="guava"></p></p>
-                    <a href="#" class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></a>
+                    <h5 class="card-title responsive1">Amla</h5>
+                    <p class="card-text responsive2">MRP : 500gm -<span class="productPrice"> 35</span>Rs <br> Quantity : <input type="number" class="responsive" min="1" name="guava" id="guava"></p></p>
+                    <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
                   </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3">
               <div class="card responsive5">
-                  <img src="../static/Fruits/Banana.png" class="card-img-top responsive7" alt="..." height="230px">
+                  <img src="../static/Fruits/Banana.png" class="card-img-top responsive7 " alt="..." height="230px">
                   <hr>
                   <div class="card-body">
-                    <h5 class="card- responsive1">Banana</h5>
-                    <p class="card-text responsive2">MRP : 1 dozen - 50Rs <br> Quantity : <input type="number" class="responsive" min="1" name="orange" id="orange"></p></p>
-                    <a href="#" class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></a>
+                    <h5 class="card-title responsive1">Banana</h5>
+                    <p class="card-text responsive2">MRP : 1 dozen -<span class="productPrice"> 50</span>Rs <br> Quantity : <input type="number" class="responsive" min="1" name="orange" id="orange"></p></p>
+                    <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
                   </div>
                 </div>
             </div>
@@ -172,45 +173,45 @@
       <div class="row">
           <div class="col-lg-3 col-md-3 col-sm-3">
             <div class="card responsive5">
-                <img src="../static/Fruits/Chiku.png" class="card-img-top responsive7" alt="..." height="230px">
+                <img src="../static/Fruits/Chiku.png" class="card-img-top responsive7 " alt="..." height="230px">
                 <hr>
                 <div class="card-body">
-                  <h5 class="card- responsive1">Chiku</h5>
-                  <p class="card-text responsive2">MRP : 1 dozen - 100Rs <br> Quantity : <input type="number" class="responsive" min="1" name="mango" id="mango"></p></p>
-                  <a href="#" class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></a>
+                  <h5 class="card-title responsive1">Chiku</h5>
+                  <p class="card-text responsive2">MRP : 1 dozen -<span class="productPrice"> 100</span>Rs <br> Quantity : <input type="number" class="responsive" min="1" name="mango" id="mango"></p></p>
+                  <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
                 </div>
               </div>
           </div>
           <div class="col-lg-3 col-md-3 col-sm-3">
             <div class="card responsive5">
-                <img src="../static/Fruits/Coconut.png" class="card-img-top responsive7" alt="..." height="230px">
+                <img src="../static/Fruits/Coconut.png" class="card-img-top responsive7 " alt="..." height="230px">
                 <hr>
                 <div class="card-body">
-                  <h5 class="card- responsive1">Coconut</h5>
-                  <p class="card-text responsive2">MRP : 1 piece - 30Rs <br> Quantity : <input type="number" class="responsive" min="1" name="app" id="apple"></p>
-                  <a href="#" class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></a>
+                  <h5 class="card-title responsive1">Coconut</h5>
+                  <p class="card-text responsive2">MRP : 1 piece <span class="productPrice"> 30</span>Rs <br> Quantity : <input type="number" class="responsive" min="1" name="app" id="apple"></p>
+                  <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
                 </div>
               </div>
           </div>
           <div class="col-lg-3 col-md-3 col-sm-3">
             <div class="card responsive5">
-                <img src="../static/Fruits/Kiwi.png" class="card-img-top responsive7" alt="..." height="230px">
+                <img src="../static/Fruits/Kiwi.png" class="card-img-top responsive7 " alt="..." height="230px">
                 <hr>
                 <div class="card-body">
-                  <h5 class="card- responsive1">Kiwi</h5>
-                  <p class="card-text responsive2">MRP : 1 dozen - 100Rs <br> Quantity : <input type="number" class="responsive" min="1" name="guava" id="guava"></p>
-                  <a href="#" class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></a>
+                  <h5 class="card-title responsive1">Kiwi</h5>
+                  <p class="card-text responsive2">MRP : 1 dozen -<span class="productPrice"> 100</span>Rs <br> Quantity : <input type="number" class="responsive" min="1" name="guava" id="guava"></p>
+                  <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
                 </div>
               </div>
           </div>
           <div class="col-lg-3 col-md-3 col-sm-3">
             <div class="card responsive5">
-                <img src="../static/Fruits/Raw Mango.png" class="card-img-top responsive7" alt="..." height="230px">
+                <img src="../static/Fruits/Raw Mango.png" class="card-img-top responsive7 " alt="..." height="230px">
                 <hr>
                 <div class="card-body">
-                  <h5 class="card- responsive1">Raw Mango</h5>
-                  <p class="card-text responsive2">MRP : 1 dozen - 160 Rs <br> Quantity : <input type="number" class="responsive" min="1" name="orange" id="orange"></p>
-                  <a href="#" class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></a>
+                  <h5 class="card-title responsive1">Raw Mango</h5>
+                  <p class="card-text responsive2">MRP : 1 dozen - <span class="productPrice">160</span> Rs <br> Quantity : <input type="number" class="responsive" min="1" name="orange" id="orange"></p>
+                  <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
                 </div>
               </div>
           </div>
@@ -230,45 +231,45 @@
     <div class="row">
         <div class="col-lg-3 col-md-3 col-sm-3">
           <div class="card responsive5">
-              <img src="../static/Fruits/Pear.png" class="card-img-top responsive7" alt="..." height="230px">
+              <img src="../static/Fruits/Pear.png" class="card-img-top responsive7 " alt="..." height="230px">
               <hr>
               <div class="card-body">
-                <h5 class="card- responsive1">Pear</h5>
-                <p class="card-text responsive2">MRP : 1 dozen - 200Rs <br> Quantity : <input type="number" class="responsive" min="1" name="mango" id="mango"></p>
-                <a href="#" class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></a>
+                <h5 class="card-title responsive1">Pear</h5>
+                <p class="card-text responsive2">MRP : 1 dozen -<span class="productPrice"> 200</span>Rs <br> Quantity : <input type="number" class="responsive" min="1" name="mango" id="mango"></p>
+                <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
               </div>
             </div>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-3">
           <div class="card responsive5">
-              <img src="../static/Fruits/Pineapple.png" class="card-img-top responsive7" alt="..." height="230px">
+              <img src="../static/Fruits/Pineapple.png" class="card-img-top responsive7 " alt="..." height="230px">
               <hr>
               <div class="card-body">
-                <h5 class="card- responsive1">Pineapple</h5>
-                <p class="card-text responsive2">MRP : 1 piece - 50Rs <br> Quantity : <input type="number" class="responsive" min="1" name="apple" id="apple"></p>
-                <a href="#" class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></a>
+                <h5 class="card-title responsive1">Pineapple</h5>
+                <p class="card-text responsive2">MRP : 1 piece -<span class="productPrice"> 50</span>Rs <br> Quantity : <input type="number" class="responsive" min="1" name="apple" id="apple"></p>
+                <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
               </div>
             </div>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-3">
           <div class="card responsive5">
-              <img src="../static/Fruits/Watermelon.png" class="card-img-top responsive7" alt="..." height="230px">
+              <img src="../static/Fruits/Watermelon.png" class="card-img-top responsive7 " alt="..." height="230px">
               <hr>
               <div class="card-body">
-                <h5 class="card- responsive1">Watermelon</h5>
-                <p class="card-text responsive2">MRP : 1 piece - 70Rs <br> Quantity : <input type="number" class="responsive" min="1" name="guava" id="guava"></p>
-                <a href="#" class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></a>
+                <h5 class="card-title responsive1">Watermelon</h5>
+                <p class="card-text responsive2">MRP : 1 piece -<span class="productPrice"> 70</span>Rs <br> Quantity : <input type="number" class="responsive" min="1" name="guava" id="guava"></p>
+                <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
               </div>
             </div>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-3">
           <div class="card responsive5">
-              <img src="../static/Fruits/Sweet Corn.png" class="card-img-top responsive7" alt="..." height="230px">
+              <img src="../static/Fruits/Sweet Corn.png" class="card-img-top responsive7 " alt="..." height="230px">
               <hr>
               <div class="card-body">
-                <h5 class="card- responsive1">Sweet Corn</h5>
-                <p class="card-text responsive2">MRP : 1 piece - 20Rs <br> Quantity : <input type="number" class="responsive" min="1" name="orange" id="orange"></p>
-                <a href="#" class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></a>
+                <h5 class="card-title responsive1">Sweet Corn</h5>
+                <p class="card-text responsive2">MRP : 1 piece -<span class="productPrice"> 20</span>Rs <br> Quantity : <input type="number" class="responsive" min="1" name="orange" id="orange"></p>
+                <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
               </div>
             </div>
         </div>
@@ -288,45 +289,45 @@
     <div class="row">
         <div class="col-lg-3 col-md-3 col-sm-3">
           <div class="card responsive6">
-              <img src="../static/Fruits/Papaya.png" class="card-img-top responsive7" alt="..." height="230px">
+              <img src="../static/Fruits/Papaya.png" class="card-img-top responsive7 " alt="..." height="230px">
               <hr>
               <div class="card-body">
-                <h5 class="card-title responsive1">Papaya(Papaw)</h5>
-                <p class="card-text responsive2 ">MRP : 1 piece - 40Rs <br> Quantity : <input type="number" class="responsive" min="1" name="mango" id="mango"></p>
-                <a href="#" class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></a>
+                <h5 class="card-titletitle responsive1">Papaya(Papaw)</h5>
+                <p class="card-text responsive2 ">MRP : 1 piece -<span class="productPrice"> 40</span>Rs <br> Quantity : <input type="number" class="responsive" min="1" name="mango" id="mango"></p>
+                <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
               </div>
             </div>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-3">
           <div class="card responsive6">
-              <img src="../static/Fruits/Pomegranate.png" class="card-img-top responsive7" alt="..." height="230px">
+              <img src="../static/Fruits/Pomegranate.png" class="card-img-top responsive7 " alt="..." height="230px">
               <hr>
               <div class="card-body">
-                <h5 class="card- responsive1">Pomegranate</h5>
-                <p class="card-text responsive2">MRP : 1 piece - 30Rs <br> Quantity : <input type="number" class="responsive" min="1" name="apple" id="apple"></p>
-                <a href="#" class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></a>
+                <h5 class="card-title responsive1">Pomegranate</h5>
+                <p class="card-text responsive2">MRP : 1 piece -<span class="productPrice"> 30</span>Rs <br> Quantity : <input type="number" class="responsive" min="1" name="apple" id="apple"></p>
+                <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
               </div>
             </div>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-3">
           <div class="card responsive6">
-              <img src="../static/Fruits/TenderCoconut.png" class="card-img-top responsive7" alt="..." height="230px">
+              <img src="../static/Fruits/TenderCoconut.png" class="card-img-top responsive7 " alt="..." height="230px">
               <hr>
               <div class="card-body">
-                <h5 class="card- responsive1">Tender Coconut</h5>
-                <p class="card-text responsive2">MRP : 1 dozen - 70Rs <br> Quantity : <input type="number" class="responsive" min="1" name="guava" id="guava"></p>
-                <a href="#" class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></a>
+                <h5 class="card-title responsive1">Tender Coconut</h5>
+                <p class="card-text responsive2">MRP : 1 dozen -<span class="productPrice"> 70</span>Rs <br> Quantity : <input type="number" class="responsive" min="1" name="guava" id="guava"></p>
+                <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
               </div>
             </div>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-3">
           <div class="card responsive5">
-              <img src="../static/Fruits/Black Grapes.png" class="card-img-top responsive7" alt="..." height="230px">
+              <img src="../static/Fruits/Black Grapes.png" class="card-img-top responsive7 " alt="..." height="230px">
               <hr>
               <div class="card-body">
-                <h5 class="card- responsive1">Black Grapes</h5>
-                <p class="card-text responsive2">MRP : 1 kg - 100 Rs <br> Quantity : <input type="number" class="responsive" min="1" name="orange" id="orange"></p>
-                <a href="#" class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></a>
+                <h5 class="card-title responsive1">Black Grapes</h5>
+                <p class="card-text responsive2">MRP : 1 kg - <span class="productPrice">100</span> Rs <br> Quantity : <input type="number" class="responsive" min="1" name="orange" id="orange"></p>
+                <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
               </div>
             </div>
         </div>
@@ -344,51 +345,55 @@
   <div class="row">
       <div class="col-lg-3 col-md-3 col-sm-3">
         <div class="card responsive5">
-            <img src="../static/Fruits/Grapes.png" class="card-img-top responsive7" alt="..." height="230px">
+            <img src="../static/Fruits/Grapes.png" class="card-img-top responsive7 " alt="..." height="230px">
             <hr>
             <div class="card-body">
-              <h5 class="card- responsive1">Grapes</h5>
-              <p class="card-text responsive2">MRP : 500 gm -  40Rs <br> Quantity : <input type="number" class="responsive" min="1" name="mango" id="mango"></p>
-              <a href="#" class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></a>
+              <h5 class="card-title responsive1">Grapes</h5>
+              <p class="card-text responsive2">MRP : 500 gm -<span class="productPrice">  40</span>Rs <br> Quantity : <input type="number" class="responsive" min="1" name="mango" id="grapes"></p>
+              <button class="btn btn-primary responsive3"> <span class="responsive4">Add to Cart</span></button>
             </div>
           </div>
       </div>
       <div class="col-lg-3 col-md-3 col-sm-3">
         <div class="card responsive5">
-            <img src="../static/Fruits/Grape Fruit.png" class="card-img-top responsive7" alt="..." height="230px">
+            <img src="../static/Fruits/Grape Fruit.png" class="card-img-top responsive7 " alt="..." height="230px">
             <hr>
             <div class="card-body">
-              <h5 class="card- responsive1">Grape Fruit</h5>
-              <p class="card-text responsive2">MRP : 1 dozen - 200Rs <br> Quantity : <input type="number" class="responsive" min="1" name="apple" id="apple"></p>
-              <a href="#" class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></a>
+              <h5 class="card-title responsive1" >Grape Fruit</h5>
+              <p class="card-text responsive2">MRP : 1 dozen -<span class="productPrice"> 200</span>Rs <br> Quantity : <input type="number" class="responsive" min="1" name="apple" id="grapes"></p>
+              <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
             </div>
           </div>
       </div>
       <div class="col-lg-3 col-md-3 col-sm-3">
         <div class="card responsive5">
-            <img src="../static/Fruits/Muskmelon.png" class="card-img-top responsive7" alt="..." height="230px">
+            <img src="../static/Fruits/Muskmelon.png" class="card-img-top responsive7 " alt="..." height="230px">
             <hr>
             <div class="card-body">
-              <h5 class="card- responsive1">Muskmelon</h5>
-              <p class="card-text responsive2">MRP : 1 piece - 70Rs <br> Quantity : <input type="number" class="responsive" min="1" name="guava" id="guava"></p>
-              <a href="#" class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></a>
+              <h5 class="card-title responsive1">Muskmelon</h5>
+              <p class="card-text responsive2">MRP : 1 piece -<span class="productPrice"> 70</span>Rs <br> Quantity : <input type="number" class="responsive" min="1" name="guava" id="guava"></p>
+              <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
             </div>
           </div>
       </div>
       <div class="col-lg-3 col-md-3 col-sm-3">
         <div class="card responsive5">
-            <img src="../static/Fruits/Passion Fruit.png" class="card-img-top responsive7" alt="..." height="230px">
+            <img src="../static/Fruits/Passion Fruit.png" class="card-img-top responsive7 " alt="..." height="230px">
             <hr>
             <div class="card-body">
-              <h5 class="card- responsive1">Passion Fruit</h5>
-              <p class="card-text responsive2">MRP : 1 piece - 30Rs <br> Quantity : <input type="number" class="responsive" min="1" name="orange" id="orange"></p>
-              <a href="#" class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></a>
+              <h5 class="card-title responsive1">Passion Fruit</h5>
+              <p class="card-text responsive2">MRP : 1 piece -<span class="productPrice"> 30</span>Rs <br> Quantity : <input type="number" class="responsive" min="1" name="orange" id="orange"></p>
+              <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
             </div>
           </div>
       </div>
   </div>
 </div>
 </div>
+
+
+
+
 <footer class="page-footer font-small mdb-color lighten-3 pt-4" style="background-color: grey;color: cornsilk;margin-top: 10px;">
 
   <!-- Footer Links -->
@@ -401,7 +406,7 @@
       <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
 
         <!-- Content -->
-        <h5 class="font-weight-bold text-uppercase mb-4">Content</h5>
+        <h5 class="font-weight-bold text-uppercase mb-4" style="color: black;">Content</h5>
         <p>Super Organic Market Grocery store brings to you a wide range of organic and natural products under one roof. We deliver our carefully curated selection across Mumbai & Pune.</p>
 
       </div>
@@ -413,27 +418,22 @@
       <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
 
         <!-- Links -->
-        <h5 class="font-weight-bold text-uppercase mb-4">About</h5>
+        <h5 class="font-weight-bold text-uppercase mb-4" style="color: black;">About</h5>
 
         <ul class="list-unstyled">
           <li>
             <p>
-              <a href="#!" style="color: white;">ABOUT US</a>
+              <a href="About.html" style="color: white;">ABOUT US</a>
             </p>
           </li>
           <li>
             <p>
-              <a href="#!" style="color: white;">PRIVACY POLICY</a>
+              <a href="PrivacyPolicy.html" style="color: white;">PRIVACY POLICY</a>
             </p>
           </li>
           <li>
             <p>
-              <a href="#!"style="color: white;">CONTACT US</a>
-            </p>
-          </li>
-          <li>
-            <p>
-              <a href="#!"style="color: white;">TERMS AND CONDITIONS</a>
+              <a href="TermsConditions.html"style="color: white;">TERMS AND CONDITIONS</a>
             </p>
           </li>
         </ul>
@@ -447,7 +447,7 @@
       <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
 
         <!-- Contact details -->
-        <h5 class="font-weight-bold text-uppercase mb-4">Address</h5>
+        <h5 class="font-weight-bold text-uppercase mb-4" style="color: black;">Address</h5>
 
         <ul class="list-unstyled">
           <li>
@@ -477,23 +477,23 @@
       <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
 
         <!-- Social buttons -->
-        <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
+        <h5 class="font-weight-bold text-uppercase mb-4" style="color: black;">Follow Us</h5>
 
         <!-- Facebook -->
         <a type="button" class="btn-floating btn-fb">
-          <a href="#" style="color: darkblue" class="fa fa-facebook fa-2x text-decoration-none y"></a>
+          <a href="https://www.facebook.com" style="color: darkblue" class="fa fa-facebook fa-2x text-decoration-none y"></a>
         </a>
         <!-- Twitter -->
-        <a href="https://www.facebook.com" type="button"  class="btn-floating btn-tw">
-          <a href="#" style="color: red;" class="fa fa-google fa-2x text-decoration-none y"></a>
+        <a  type="button"  class="btn-floating btn-tw">
+          <a href="https://www.google.com" style="color: red;" class="fa fa-google fa-2x text-decoration-none y"></a>
         </a>
         <!-- Google +-->
         <a type="button" class="btn-floating btn-gplus">
-          <a href="#" style="color: purple;" class="fa fa-instagram fa-2x text-decoration-none y"></a>
+          <a href="https://www.instagram.com" style="color: purple;" class="fa fa-instagram fa-2x text-decoration-none y"></a>
         </a>
         <!-- Dribbble -->
         <a type="button" class="btn-floating btn-dribbble">
-          <a href="#" style="color: black;" class="fa fa-twitter fa-2x text-decoration-none "></a>
+          <a href="https://www.twitter.com" style="color: black;" class="fa fa-twitter fa-2x text-decoration-none "></a>
         </a>
 
       </div>
@@ -513,8 +513,8 @@
 
 </footer>
 
-
-
+<script src="main.js"></script>
+<script src="cartjs.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 

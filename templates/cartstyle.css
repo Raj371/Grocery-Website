@@ -1,0 +1,56 @@
+.container{
+    width: 100%;
+}
+img{
+    height: 150px;
+}
+table{
+    width: 100%;
+}
+td,th{
+    border: 1px solid black;
+}
+td{
+    text-align: center;
+}
+.y1{
+    width: 30%;
+}
+.y2{
+    width: 15%;
+}
+.y3
+{
+    width: 15%;
+}
+.y4{
+    width: 15%;
+}
+.deleteitembutton{
+    width: 25%;
+    background-color: red;
+    color: white;
+}
+.cartfruitmr{
+    font-size: 30px;
+    text-align: center;
+    color: darkgreen;
+    margin-top: 20px;
+}
+.butto{
+background-color: teal;
+color: white;
+font-size: 20px;
+cursor: pointer;
+height: 50px;
+width: 40%;
+margin-top: 40px;
+margin-bottom: 40px;
+}
+body{
+    background-color: cornsilk;
+}
+.container3{
+    display: flex;
+    justify-content: center;
+}

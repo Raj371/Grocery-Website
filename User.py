@@ -1,8 +1,6 @@
 from flask import Flask , render_template , request
 import mysql.connector
-
 app=Flask(__name__)
-
 @app.route('/')
 def signUp():
     return render_template("Login.html")
@@ -27,10 +25,6 @@ def login():
         mydb.commit()
         mycursor.close()
     return render_template("Login.html")
-
-
-
-
 @app.route('/display',methods=['POST','GET'])
 def display():
     mydb = mysql.connector.connect(

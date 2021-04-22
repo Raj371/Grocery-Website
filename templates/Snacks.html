@@ -24,21 +24,21 @@
               <span class="Dropdown">SHOP BY CATEGORY</span>
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="/Grocery1">Home</a></li>
-              <li><a class="dropdown-item" href="/Fruits" >Fruits</a></li>
-              <li><a class="dropdown-item" href="/Vegetables">Vegetables</a></li>
-              <li><a class="dropdown-item" href="/Beverages">Beverages</a></li>
-              <li><a class="dropdown-item" href="#">Snacks</a></li>
+              <li><a class="dropdown-item" href="Grocery1.html">Home</a></li>
+              <li><a class="dropdown-item" href="Fruits.html" >Fruits</a></li>
+              <li><a class="dropdown-item" href="Vegetables.html">Vegetables</a></li>
+              <li><a class="dropdown-item" href="Beverages.html">Beverages</a></li>
+              <li><a class="dropdown-item" href="Snacks.html">Snacks</a></li>
 
             </ul>
           </li>
         </ul>
         <form class="d-flex searchres" style="margin-right: 20%;">
-          <input class="form-control me-2" style="width: 400px;" type="search" placeholder="Search" aria-label="Search" >
-          <button class="btn  search" type="submit">Search</button>
+          <input class="form-control me-2" style="width: 400px;" type="search" placeholder="Search" id="searchTxt" aria-label="Search" >
+          <button class="btn  search" onclick="searching()" type="submit">Search</button>
         </form>
         <br>
-        <button style="font-size:20px; background-color: black;color: white;" class="cart">Cart<i class="fa fa-shopping-cart "></i></button>
+        <a href="cart.html"><button style="font-size:20px; background-color: black;color: white;" class="cart">Cart<i class="fa fa-shopping-cart "></i></button></a>
         <button onclick="change()" style="font-size:20px; background-color: black;color: white;"  class="cart">Logout</button>
         
      </div>
@@ -63,8 +63,8 @@
                     <hr>
                     <div class="card-body">
                       <h5 class="card-title responsive1">Maggi</h5>
-                      <p class="card-text responsive2">MRP : 15Rs <br> Quantity : <input type="number" class="responsive" min="1" name="maggi" id="maggi"></p></p>
-                      <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
+                      <p class="card-text responsive2">MRP :<span class="productPrice"> 15</span>Rs <br> Quantity : <input type="number" class="responsive" min="1" name="maggi" id="maggi"></p></p>
+                      <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
                     </div>
                   </div>
               </div>
@@ -74,8 +74,8 @@
                     <hr>
                     <div class="card-body">
                       <h5 class="card-title responsive1">Soya Sticks</h5>
-                      <p class="card-text responsive2">MRP : 50Rs <br> Quantity : <input type="number" class="responsive" min="1" name="Soya" id="Soya"></p></p>
-                      <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
+                      <p class="card-text responsive2">MRP :<span class="productPrice"> 50</span>Rs <br> Quantity : <input type="number" class="responsive" min="1" name="Soya" id="Soya"></p></p>
+                      <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
                     </div>
                   </div>
               </div>
@@ -85,8 +85,8 @@
                     <hr>
                     <div class="card-body">
                       <h5 class="card-title responsive1">Moongdal</h5>
-                      <p class="card-text responsive2">MRP : 70Rs  <br> Quantity : <input type="number" class="responsive" min="1" name="moongdal" id="moongdal"></p></p>
-                      <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
+                      <p class="card-text responsive2">MRP : <span class="productPrice">70</span>Rs  <br> Quantity : <input type="number" class="responsive" min="1" name="moongdal" id="moongdal"></p></p>
+                      <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
                     </div>
                   </div>
               </div>
@@ -96,8 +96,8 @@
                     <hr>
                     <div class="card-body">
                       <h5 class="card-title responsive1">Tasty Nuts</h5>
-                      <p class="card-text responsive2">MRP : 40Rs <br> Quantity : <input type="number" class="responsive" min="1" name="orange" id="orange"></p></p>
-                      <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
+                      <p class="card-text responsive2">MRP :<span class="productPrice"> 40</span>Rs <br> Quantity : <input type="number" class="responsive" min="1" name="orange" id="orange"></p></p>
+                      <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
                     </div>
                   </div>
               </div>
@@ -119,8 +119,8 @@
                   <hr>
                   <div class="card-body">
                     <h5 class="card-title responsive1">Little Hearts Biscuits</h5>
-                    <p class="card-text responsive2">MRP : 10Rs per pack <br> Quantity : <input type="number" class="responsive" min="1" name="heart" id="heart"></p>
-                    <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
+                    <p class="card-text responsive2">MRP : <span class="productPrice"> 10</span>Rs per pack <br> Quantity : <input type="number" class="responsive" min="1" name="heart" id="heart"></p>
+                    <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
                   </div>
                 </div>
             </div>
@@ -130,8 +130,8 @@
                   <hr>
                   <div class="card-body">
                     <h5 class="card-title responsive1">Cornflakes(Kellogs)</h5>
-                    <p class="card-text responsive2">MRP : 200Rs per pack <br> Quantity : <input type="number" class="responsive" min="1" name="cornflakes" id="cornflakes"></p>
-                    <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
+                    <p class="card-text responsive2">MRP : <span class="productPrice">200</span>Rs per pack <br> Quantity : <input type="number" class="responsive" min="1" name="cornflakes" id="cornflakes"></p>
+                          <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
                   </div>
                 </div>
             </div>
@@ -141,8 +141,8 @@
                   <hr>
                   <div class="card-body">
                     <h5 class="card-title responsive1">Cream N' Onion Chips</h5>
-                    <p class="card-text responsive2">MRP : 30Rs per pack <br> Quantity : <input type="number" class="responsive" min="1" name="laysaco" id="laysaco"></p>
-                    <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
+                    <p class="card-text responsive2">MRP : <span class="productPrice">30</span>Rs per pack <br> Quantity : <input type="number" class="responsive" min="1" name="laysaco" id="laysaco"></p>
+                    <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
                   </div>
                 </div>
             </div>
@@ -152,8 +152,8 @@
                   <hr>
                   <div class="card-body">
                     <h5 class="card-title responsive1"> Veg Hakka Noodles</h5>
-                    <p class="card-text responsive2">MRP : 20Rs per pack <br> Quantity : <input type="number" class="responsive" min="1" name="noodle" id="noodle"></p>
-                    <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
+                    <p class="card-text responsive2">MRP : <span class="productPrice">20</span>Rs per pack <br> Quantity : <input type="number" class="responsive" min="1" name="noodle" id="noodle"></p>
+                    <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
                   </div>
                 </div>
             </div>
@@ -176,8 +176,8 @@
                 <hr>
                 <div class="card-body">
                   <h5 class="card-title responsive1">Dark Choco Biscuits</h5>
-                  <p class="card-text responsive2">MRP : 30Rs <br> Quantity : <input type="number" class="responsive" min="1" name="chocofills" id="chocofills"></p>
-                  <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
+                  <p class="card-text responsive2">MRP :<span class="productPrice"> 30</span>Rs <br> Quantity : <input type="number" class="responsive" min="1" name="chocofills" id="chocofills"></p>
+                  <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
                 </div>
               </div>
           </div>
@@ -187,8 +187,8 @@
                 <hr>
                 <div class="card-body">
                   <h5 class="card-title responsive1">Yippee</h5>
-                  <p class="card-text responsive2">MRP : 10Rs per pack <br> Quantity : <input type="number" class="responsive" min="1" name="yippee" id="yippee"></p>
-                  <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
+                  <p class="card-text responsive2">MRP : <span class="productPrice">10</span>Rs per pack <br> Quantity : <input type="number" class="responsive" min="1" name="yippee" id="yippee"></p>
+                  <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
                 </div>
               </div>
           </div>
@@ -198,8 +198,8 @@
                 <hr>
                 <div class="card-body">
                   <h5 class="card-title responsive1">Protein Bars</h5>
-                  <p class="card-text responsive2">MRP : 450Rs per pack  <br> Quantity : <input type="number" class="responsive" min="1" name="protein" id="protein"></p>
-                  <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
+                  <p class="card-text responsive2">MRP : <span class="productPrice">450</span>Rs per pack  <br> Quantity : <input type="number" class="responsive" min="1" name="protein" id="protein"></p>
+                  <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
                 </div>
               </div>
           </div>
@@ -209,8 +209,8 @@
                 <hr>
                 <div class="card-body">
                   <h5 class="card-title responsive1"> Popcorn</h5>
-                  <p class="card-text responsive2">MRP : 500g - 60Rs  <br> Quantity : <input type="number" class="responsive" min="1" name="popcorn" id="popcorn"></p>
-                  <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
+                  <p class="card-text responsive2">MRP : 500g - <span class="productPrice">60</span>Rs  <br> Quantity : <input type="number" class="responsive" min="1" name="popcorn" id="popcorn"></p>
+                  <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
                 </div>
               </div>
           </div>
@@ -234,8 +234,8 @@
               <hr>
               <div class="card-body">
                 <h5 class="card-title responsive1">Muesli</h5>
-                <p class="card-text responsive2">MRP : 200Rs  <br> Quantity : <input type="number" class="responsive" min="1" name="muesli" id="muesli"></p>
-                <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
+                <p class="card-text responsive2">MRP : <span class="productPrice">200</span>Rs  <br> Quantity : <input type="number" class="responsive" min="1" name="muesli" id="muesli"></p>
+                <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
               </div>
             </div>
         </div>
@@ -245,8 +245,8 @@
               <hr>
               <div class="card-body">
                 <h5 class="card-title responsive1">Oats</h5>
-                <p class="card-text responsive2">MRP : 250Rs <br> Quantity : <input type="number" class="responsive" min="1" name="oats" id="oats"></p>
-                <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
+                <p class="card-text responsive2">MRP : <span class="productPrice">250</span>Rs <br> Quantity : <input type="number" class="responsive" min="1" name="oats" id="oats"></p>
+                <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
               </div>
             </div>
         </div>
@@ -256,8 +256,8 @@
               <hr>
               <div class="card-body">
                 <h5 class="card-title responsive1">Jim Jam</h5>
-                <p class="card-text responsive2">MRP : 25Rs <br> Quantity : <input type="number" class="responsive" min="1" name="moongdal" id="moongdal"></p>
-                <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
+                <p class="card-text responsive2">MRP :<span class="productPrice"> 25</span>Rs <br> Quantity : <input type="number" class="responsive" min="1" name="moongdal" id="moongdal"></p>
+                <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
               </div>
             </div>
         </div>
@@ -267,8 +267,8 @@
               <hr>
               <div class="card-body">
                 <h5 class="card-title responsive1">Milk Bikis</h5>
-                <p class="card-text responsive2">MRP : 20Rs  <br> Quantity : <input type="number" class="responsive" min="1" name="milk" id="milk"></p>
-                <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
+                <p class="card-text responsive2">MRP : <span class="productPrice">20</span>Rs  <br> Quantity : <input type="number" class="responsive" min="1" name="milk" id="milk"></p>
+                <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
               </div>
             </div>
         </div>
@@ -292,8 +292,8 @@
               <hr>
               <div class="card-body">
                 <h5 class="card-title responsive1">Aloo Bhujia</h5>
-                <p class="card-text responsive2">MRP : 85Rs  <br> Quantity : <input type="number" class="responsive" min="1" name="bhujia" id="bhujia"></p>
-                <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
+                <p class="card-text responsive2">MRP : <span class="productPrice">85</span>Rs  <br> Quantity : <input type="number" class="responsive" min="1" name="bhujia" id="bhujia"></p>
+                <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
               </div>
             </div>
         </div>
@@ -303,8 +303,8 @@
               <hr>
               <div class="card-body">
                 <h5 class="card-title responsive1">Parle-G</h5>
-                <p class="card-text responsive2">MRP : 50Rs <br> Quantity : <input type="number" class="responsive" min="1" name="parleg" id="parleg"></p>
-                <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
+                <p class="card-text responsive2">MRP :<span class="productPrice"> 50</span>Rs <br> Quantity : <input type="number" class="responsive" min="1" name="parleg" id="parleg"></p>
+                <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
               </div>
             </div>
         </div>
@@ -314,8 +314,8 @@
               <hr>
               <div class="card-body">
                 <h5 class="card-title responsive1">Oreo</h5>
-                <p class="card-text responsive2">MRP : 30Rs  <br> Quantity : <input type="number" class="responsive" min="1" name="oreo" id="oreo"></p>
-                <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
+                <p class="card-text responsive2">MRP : <span class="productPrice">30</span>Rs  <br> Quantity : <input type="number" class="responsive" min="1" name="oreo" id="oreo"></p>
+                <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
               </div>
             </div>
         </div>
@@ -325,8 +325,8 @@
               <hr>
               <div class="card-body">
                 <h5 class="card-title responsive1">Ketchup</h5>
-                <p class="card-text responsive2">MRP:1kg-120Rs  <br> Quantity : <input type="number" class="responsive" min="1" name="sauce" id="sauce"></p>
-                <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
+                <p class="card-text responsive2">MRP:1kg-1<span class="productPrice">20</span>Rs  <br> Quantity : <input type="number" class="responsive" min="1" name="sauce" id="sauce"></p>
+                <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
               </div>
             </div>
         </div>
@@ -348,8 +348,8 @@
             <hr>
             <div class="card-body">
               <h5 class="card-title responsive1">Hide & Seek</h5>
-              <p class="card-text responsive2">MRP : 1pack-30Rs<br> Quantity : <input type="number" class="responsive" min="1" name="hidenseek" id="hidenseek"></p>
-              <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
+              <p class="card-text responsive2">MRP : 1pack-<span class="productPrice">30</span>Rs<br> Quantity : <input type="number" class="responsive" min="1" name="hidenseek" id="hidenseek"></p>
+              <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
             </div>
           </div>
       </div>
@@ -359,8 +359,8 @@
             <hr>
             <div class="card-body">
               <h5 class="card-title responsive1">Chocos</h5>
-              <p class="card-text responsive2">MRP : 1 kg - 500Rs <br> Quantity : <input type="number" class="responsive" min="1" name="chocos" id="chocos"></p>
-              <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
+              <p class="card-text responsive2">MRP : 1 kg - <span class="productPrice">500</span>Rs <br> Quantity : <input type="number" class="responsive" min="1" name="chocos" id="chocos"></p>
+              <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
             </div>
           </div>
       </div>
@@ -370,19 +370,19 @@
             <hr>
             <div class="card-body">
               <h5 class="card-title responsive1">Good Day</h5>
-              <p class="card-text responsive2">MRP : 1pack-20Rs <br> Quantity : <input type="number" class="responsive" min="1" name="cashewcookie" id="cashewcookie"></p>
-              <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
+              <p class="card-text responsive2">MRP : 1pack-<span class="productPrice">20</span>Rs <br> Quantity : <input type="number" class="responsive" min="1" name="cashewcookie" id="cashewcookie"></p>
+              <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
             </div>
           </div>
       </div>
       <div class="col-lg-3 col-md-3 col-sm-3">
-        <div class="card responsive5" >
+        <div class="card responsive5">
             <img src="../static/Snacks/jam.jpg" class="card-img-top responsive7" alt="..." height="230px">
             <hr>
             <div class="card-body">
               <h5 class="card-title responsive1">Fruit Jam</h5>
-              <p class="card-text responsive2">MRP : 1kg - 120Rs <br> Quantity : <input type="number" class="responsive" min="1" name="jam" id="jam"></p>
-              <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
+              <p class="card-text responsive2">MRP : 1kg - <span class="productPrice">120</span>Rs <br> Quantity : <input type="number" class="responsive" min="1" name="jam" id="jam"></p>
+              <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
             </div>
           </div>
       </div>
@@ -401,7 +401,7 @@
       <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
 
         <!-- Content -->
-        <h5 class="font-weight-bold text-uppercase mb-4">Content</h5>
+        <h5 class="font-weight-bold text-uppercase mb-4" style="color: black;">Content</h5>
         <p>Super Organic Market Grocery store brings to you a wide range of organic and natural products under one roof. We deliver our carefully curated selection across Mumbai & Pune.</p>
 
       </div>
@@ -413,27 +413,22 @@
       <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
 
         <!-- Links -->
-        <h5 class="font-weight-bold text-uppercase mb-4">About</h5>
+        <h5 class="font-weight-bold text-uppercase mb-4" style="color: black;">About</h5>
 
         <ul class="list-unstyled">
           <li>
             <p>
-              <a href="#!" style="color: white;">ABOUT US</a>
+              <a href="About.html" style="color: white;">ABOUT US</a>
             </p>
           </li>
           <li>
             <p>
-              <a href="#!" style="color: white;">PRIVACY POLICY</a>
+              <a href="PrivacyPolicy.html" style="color: white;">PRIVACY POLICY</a>
             </p>
           </li>
           <li>
             <p>
-              <a href="#!"style="color: white;">CONTACT US</a>
-            </p>
-          </li>
-          <li>
-            <p>
-              <a href="#!"style="color: white;">TERMS AND CONDITIONS</a>
+              <a href="TermsConditions.html"style="color: white;">TERMS AND CONDITIONS</a>
             </p>
           </li>
         </ul>
@@ -447,7 +442,7 @@
       <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
 
         <!-- Contact details -->
-        <h5 class="font-weight-bold text-uppercase mb-4">Address</h5>
+        <h5 class="font-weight-bold text-uppercase mb-4" style="color: black;">Address</h5>
 
         <ul class="list-unstyled">
           <li>
@@ -477,23 +472,23 @@
       <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
 
         <!-- Social buttons -->
-        <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
+        <h5 class="font-weight-bold text-uppercase mb-4" style="color: black;">Follow Us</h5>
 
         <!-- Facebook -->
         <a type="button" class="btn-floating btn-fb">
-          <a href="#" style="color: darkblue" class="fa fa-facebook fa-2x text-decoration-none y"></a>
+          <a href="https://www.facebook.com" style="color: darkblue" class="fa fa-facebook fa-2x text-decoration-none y"></a>
         </a>
         <!-- Twitter -->
-        <a href="https://www.facebook.com" type="button"  class="btn-floating btn-tw">
-          <a href="#" style="color: red;" class="fa fa-google fa-2x text-decoration-none y"></a>
+        <a type="button" type="button"  class="btn-floating btn-tw">
+          <a href="https://www.google.com" style="color: red;" class="fa fa-google fa-2x text-decoration-none y"></a>
         </a>
         <!-- Google +-->
         <a type="button" class="btn-floating btn-gplus">
-          <a href="#" style="color: purple;" class="fa fa-instagram fa-2x text-decoration-none y"></a>
+          <a href="https://www.instagram.com" style="color: purple;" class="fa fa-instagram fa-2x text-decoration-none y"></a>
         </a>
         <!-- Dribbble -->
         <a type="button" class="btn-floating btn-dribbble">
-          <a href="#" style="color: black;" class="fa fa-twitter fa-2x text-decoration-none "></a>
+          <a href="https://www.twitter.com" style="color: black;" class="fa fa-twitter fa-2x text-decoration-none "></a>
         </a>
 
       </div>
@@ -512,7 +507,8 @@
   <!-- Copyright -->
 
 </footer>
-
+<script src="main.js"></script>
+<script src="cartjs.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 
