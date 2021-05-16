@@ -7,7 +7,8 @@
     <title>Vegetables</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ 
     <link rel="stylesheet" href="../static/CSS/style.css">
 </head>
 <body>
@@ -28,7 +29,7 @@
               <li><a class="dropdown-item" href="/Fruits" >Fruits</a></li>
               <li><a class="dropdown-item" href="/Vegetables">Vegetables</a></li>
               <li><a class="dropdown-item" href="/Beverages">Beverages</a></li>
-              <li><a class="dropdown-item" href="#">Snacks</a></li>
+              <li><a class="dropdown-item" href="/Snacks">Snacks</a></li>
 
             </ul>
           </li>
@@ -38,7 +39,7 @@
           <button class="btn  search" type="submit">Search</button>
         </form>
         <br>
-        <button style="font-size:20px; background-color: black;color: white;" class="cart">Cart<i class="fa fa-shopping-cart "></i></button>
+        <a href="/Cart"><button style="font-size:20px; background-color: black;color: white;" class="cart">Cart<i class="fa fa-shopping-cart "></i></button></a>
         <button onclick="change()" style="font-size:20px; background-color: black;color: white;"  class="cart">Logout</button>
         
      </div>
@@ -64,8 +65,8 @@
                     <hr>
                     <div class="card-body">
                       <h5 class="card-title responsive1">Beans</h5>
-                      <p class="card-text responsive2">MRP : 250g - 23Rs <br> Quantity : <input type="number" class="responsive" min="1" name="mango" id="mango"></p>
-                      <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
+                      <p class="card-text responsive2">MRP : 250g - <span class="productPrice">23</span>Rs <br> Quantity : <input type="number" class="responsive" min="1" name="mango" id="mango"></p>
+                      <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
                     </div>
                   </div>
               </div>
@@ -75,8 +76,8 @@
                     <hr>
                     <div class="card-body">
                       <h5 class="card-title responsive1">Beetroot</h5>
-                      <p class="card-text responsive2">MRP : 500g - 12Rs <br> Quantity : <input type="number" class="responsive" min="1" name="apple" id="apple"></p>
-                      <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
+                      <p class="card-text responsive2">MRP : 500g - <span class="productPrice">12</span>Rs <br> Quantity : <input type="number" class="responsive" min="1" name="apple" id="apple"></p>
+                      <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
                     </div>
                   </div>
               </div>
@@ -86,8 +87,8 @@
                     <hr>
                     <div class="card-body">
                       <h5 class="card-title responsive1">Brinjal</h5>
-                      <p class="card-text responsive2">MRP : 500g - 12Rs <br> Quantity : <input type="number" class="responsive" min="1" name="guava" id="guava"></p>
-                      <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
+                      <p class="card-text responsive2">MRP : 500g - <span class="productPrice">12</span>Rs <br> Quantity : <input type="number" class="responsive" min="1" name="guava" id="guava"></p>
+                      <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
                     </div>
                   </div>
               </div>
@@ -97,8 +98,8 @@
                     <hr>
                     <div class="card-body">
                       <h5 class="card-title responsive1">Brocolli</h5>
-                      <p class="card-text responsive2">MRP : 250g - 28Rs <br> Quantity : <input type="number" class="responsive" min="1" name="orange" id="orange"></p>
-                      <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
+                      <p class="card-text responsive2">MRP : 250g - <span class="productPrice">28</span>Rs <br> Quantity : <input type="number" class="responsive" min="1" name="orange" id="orange"></p>
+                      <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
                     </div>
                   </div>
               </div>
@@ -120,8 +121,8 @@
                   <hr>
                   <div class="card-body">
                     <h5 class="card-title responsive1">Cabbage</h5>
-                    <p class="card-text responsive2">MRP : 1pc - 12Rs <br> Quantity : <input type="number" class="responsive" min="1" name="mango" id="m ngo"></p>
-                    <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
+                    <p class="card-text responsive2">MRP : 1pc -<span class="productPrice"> 12</span>Rs <br> Quantity : <input type="number" class="responsive" min="1" name="mango" id="m ngo"></p>
+                    <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
                   </div>
                 </div>
             </div>
@@ -131,8 +132,8 @@
                   <hr>
                   <div class="card-body">
                     <h5 class="card-title responsive1">Carrot</h5>
-                    <p class="card-text responsive2">MRP : 500g - 36Rs <br> Quantity : <input type="number" class="responsive" min="1" name="apple" id="apple"></p>
-                    <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
+                    <p class="card-text responsive2">MRP : 500g -<span class="productPrice"> 36</span>Rs <br> Quantity : <input type="number" class="responsive" min="1" name="apple" id="apple"></p>
+                    <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
                   </div>
                 </div>
             </div>
@@ -142,8 +143,8 @@
                   <hr>
                   <div class="card-body">
                     <h5 class="card-title responsive1">Cauliflower</h5>
-                    <p class="card-text responsive2">MRP : 500 - 17Rs <br> Quantity : <input type="number" class="responsive" min="1" name="guava" id="guava"></p>
-                    <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
+                    <p class="card-text responsive2">MRP : 500 -<span class="productPrice"> 17</span>Rs <br> Quantity : <input type="number" class="responsive" min="1" name="guava" id="guava"></p>
+                    <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
                   </div>
                 </div>
             </div>
@@ -153,8 +154,8 @@
                   <hr>
                   <div class="card-body">
                     <h5 class="card-title responsive1">Palak</h5>
-                    <p class="card-text responsive2">MRP : 250g - 17.5Rs <br> Quantity : <input type="number" class="responsive" min="1" name="orange" id ="orange"></p>
-                    <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
+                    <p class="card-text responsive2">MRP : 250g - 1<span class="productPrice">7.5</span>Rs <br> Quantity : <input type="number" class="responsive" min="1" name="orange" id ="orange"></p>
+                    <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
                   </div>
                 </div>
             </div>
@@ -177,8 +178,8 @@
                 <hr>
                 <div class="card-body">
                   <h5 class="card-title responsive1">Coriander</h5>
-                  <p class="card-text responsive2">MRP : 100g - 10Rs <br> Quantity : <input type="number" class="responsive" min="1" name="mango" id="mango"></p>
-                  <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
+                  <p class="card-text responsive2">MRP : 100g -<span class="productPrice"> 10</span>Rs <br> Quantity : <input type="number" class="responsive" min="1" name="mango" id="mango"></p>
+                  <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
                 </div>
               </div>
           </div>
@@ -188,8 +189,8 @@
                 <hr>
                 <div class="card-body">
                   <h5 class="card-title responsive1">Cucumber</h5>
-                  <p class="card-text responsive2">MRP : 500g - 25Rs <br> Quantity : <input type="number" class="responsive" min="1" name="apple" id ="pple"></p>
-                  <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
+                  <p class="card-text responsive2">MRP : 500g -<span class="productPrice"> 25</span>Rs <br> Quantity : <input type="number" class="responsive" min="1" name="apple" id ="pple"></p>
+                  <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
                 </div>
               </div>
           </div>
@@ -199,8 +200,8 @@
                 <hr>
                 <div class="card-body">
                   <h5 class="card-title responsive1">Garlic</h5>
-                  <p class="card-text responsive2">MRP : 250g - 30Rs <br> Quantity : <input type="number" class="responsive" min="1" name="guava" id ="uava"></p>
-                  <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
+                  <p class="card-text responsive2">MRP : 250g -<span class="productPrice"> 30</span>Rs <br> Quantity : <input type="number" class="responsive" min="1" name="guava" id ="uava"></p>
+                  <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
                 </div>
               </div>
           </div>
@@ -210,8 +211,8 @@
                 <hr>
                 <div class="card-body">
                   <h5 class="card-title responsive1">Ginger</h5>
-                  <p class="card-text responsive2">MRP : 250g - 10Rs <br> Quantity : <input type="number" class="responsive" min="1" name="orange" id="orange"></p>
-                  <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
+                  <p class="card-text responsive2">MRP : 250g -<span class="productPrice"> 10</span>Rs <br> Quantity : <input type="number" class="responsive" min="1" name="orange" id="orange"></p>
+                  <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
                 </div>
               </div>
           </div>
@@ -235,8 +236,8 @@
               <hr>
               <div class="card-body">
                 <h5 class="card-title responsive1">LadiesFinger</h5>
-                <p class="card-text responsive2">MRP : 500g - 20Rs <br> Quantity : <input type="number" class="responsive" min="1" name="mango" id ="ango"></p>
-                <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
+                <p class="card-text responsive2">MRP : 500g -<span class="productPrice"> 20</span>Rs <br> Quantity : <input type="number" class="responsive" min="1" name="mango" id ="ango"></p>
+                <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
               </div>
             </div>
         </div>
@@ -246,8 +247,8 @@
               <hr>
               <div class="card-body">
                 <h5 class="card-title responsive1">Lemon</h5>
-                <p class="card-text responsive2">MRP : 250g - 20Rs <br> Quantity : <input type="number" class="responsive" min="1" name="apple" id="apple"></p>
-                <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
+                <p class="card-text responsive2">MRP : 250g -<span class="productPrice"> 20</span>Rs <br> Quantity : <input type="number" class="responsive" min="1" name="apple" id="apple"></p>
+                <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
               </div>
             </div>
         </div>
@@ -257,8 +258,8 @@
               <hr>
               <div class="card-body">
                 <h5 class="card-title responsive1">Methi</h5>
-                <p class="card-text responsive2">MRP : 100g - 10Rs <br> Quantity : <input type="number" class="responsive" min="1" name="guava" id="guava"></p>
-                <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
+                <p class="card-text responsive2">MRP : 100g -<span class="productPrice"> 10</span>Rs <br> Quantity : <input type="number" class="responsive" min="1" name="guava" id="guava"></p>
+                <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
               </div>
             </div>
         </div>
@@ -268,8 +269,8 @@
               <hr>
               <div class="card-body">
                 <h5 class="card-title responsive1">Onion</h5>
-                <p class="card-text responsive2">MRP : 1kg - 25Rs <br> Quantity : <input type="number" class="responsive" min="1" name="orange" id=" range"></p>
-                <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
+                <p class="card-text responsive2">MRP : 1kg -<span class="productPrice"> 25</span>Rs <br> Quantity : <input type="number" class="responsive" min="1" name="orange" id=" range"></p>
+                <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
               </div>
             </div>
         </div>
@@ -293,8 +294,8 @@
               <hr>
               <div class="card-body">
                 <h5 class="card-title responsive1">Potato</h5>
-                <p class="card-text responsive2">MRP : 1kg - 21Rs <br> Quantity : <input type="number" class="responsive" min="1" name="mango" id="m ngo"></p>
-                <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
+                <p class="card-text responsive2">MRP : 1kg -<span class="productPrice"> 21</span>Rs <br> Quantity : <input type="number" class="responsive" min="1" name="mango" id="m ngo"></p>
+                <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
               </div>
             </div>
         </div>
@@ -304,8 +305,8 @@
               <hr>
               <div class="card-body">
                 <h5 class="card-title responsive1">Radish</h5>
-                <p class="card-text responsive2">MRP : 500g - 13Rs <br> Quantity : <input type="number" class="responsive" min="1" name="apple" id="apple"></p>
-                <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
+                <p class="card-text responsive2">MRP : 500g -<span class="productPrice"> 13</span>Rs <br> Quantity : <input type="number" class="responsive" min="1" name="apple" id="apple"></p>
+                <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
               </div>
             </div>
         </div>
@@ -315,8 +316,8 @@
               <hr>
               <div class="card-body">
                 <h5 class="card-title responsive1">Spinach</h5>
-                <p class="card-text responsive2">MRP : 250g - 26Rs <br> Quantity : <input type="number" class="responsive" min="1" name="guava" id="guava"></p>
-                <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
+                <p class="card-text responsive2">MRP : 250g -<span class="productPrice"> 26</span>Rs <br> Quantity : <input type="number" class="responsive" min="1" name="guava" id="guava"></p>
+                <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
               </div>
             </div>
         </div>
@@ -326,8 +327,8 @@
               <hr>
               <div class="card-body">
                 <h5 class="card-title responsive1">SpringOnion</h5>
-                <p class="card-text responsive2">MRP : 100g - 14Rs <br> Quantity : <input type="number" class="responsive" min="1" name="orange" id="orange"></p>
-                <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
+                <p class="card-text responsive2">MRP : 100g -<span class="productPrice"> 14</span>Rs <br> Quantity : <input type="number" class="responsive" min="1" name="orange" id="orange"></p>
+                <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
               </div>
             </div>
         </div>
@@ -349,8 +350,8 @@
             <hr>
             <div class="card-body">
               <h5 class="card-title responsive1">Capsicum</h5>
-              <p class="card-text responsive2">MRP : 200g - 27Rs <br> Quantity : <input type="number" class="responsive" min="1" name="mango" id="mango"></p>
-              <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
+              <p class="card-text responsive2">MRP : 200g -<span class="productPrice"> 27</span>Rs <br> Quantity : <input type="number" class="responsive" min="1" name="mango" id="mango"></p>
+              <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
             </div>
           </div>
       </div>
@@ -360,8 +361,8 @@
             <hr>
             <div class="card-body">
               <h5 class="card-title responsive1">SweetPotato</h5>
-              <p class="card-text responsive2">MRP : 500g - 20Rs <br> Quantity : <input type="number" class="responsive" min="1" name="apple" id="apple"></p>
-              <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
+              <p class="card-text responsive2">MRP : 500g -<span class="productPrice"> 20</span>Rs <br> Quantity : <input type="number" class="responsive" min="1" name="apple" id="apple"></p>
+              <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
             </div>
           </div>
       </div>
@@ -371,8 +372,8 @@
             <hr>
             <div class="card-body">
               <h5 class="card-title responsive1">Tamarind</h5>
-              <p class="card-text responsive2">MRP : 500g - 119Rs <br> Quantity : <input type="number" class="responsive" min="1" name="guava" id=" uava"></p>
-              <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
+              <p class="card-text responsive2">MRP : 500g - <span class="productPrice">119</span>Rs <br> Quantity : <input type="number" class="responsive" min="1" name="guava" id=" uava"></p>
+              <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
             </div>
           </div>
       </div>
@@ -382,8 +383,8 @@
             <hr>
             <div class="card-body">
               <h5 class="card-title responsive1">Tomato</h5>
-              <p class="card-text responsive2">MRP : 1kg - 18Rs <br> Quantity : <input type="number" class="responsive" min="1" name="orange" id=" range"></p>
-              <a href="#" class="btn btn-primary"><span class="responsive4">Add to Cart</span></a>
+              <p class="card-text responsive2">MRP : 1kg -<span class="productPrice"> 18</span>Rs <br> Quantity : <input type="number" class="responsive" min="1" name="orange" id=" range"></p>
+              <button class="btn btn-primary responsive3"><span class="responsive4">Add to Cart</span></button>
             </div>
           </div>
       </div>
@@ -402,7 +403,7 @@
       <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
 
         <!-- Content -->
-        <h5 class="font-weight-bold text-uppercase mb-4">Content</h5>
+        <h5 class="font-weight-bold text-uppercase mb-4" style="color: black;">Content</h5>
         <p>Super Organic Market Grocery store brings to you a wide range of organic and natural products under one roof. We deliver our carefully curated selection across Mumbai & Pune.</p>
 
       </div>
@@ -414,7 +415,7 @@
       <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
 
         <!-- Links -->
-        <h5 class="font-weight-bold text-uppercase mb-4">About</h5>
+        <h5 class="font-weight-bold text-uppercase mb-4" style="color: black;">About</h5>
 
         <ul class="list-unstyled">
           <li>
@@ -425,11 +426,6 @@
           <li>
             <p>
               <a href="PrivacyPolicy.html" style="color: white;">PRIVACY POLICY</a>
-            </p>
-          </li>
-          <li>
-            <p>
-              <a href="#!"style="color: white;">CONTACT US</a>
             </p>
           </li>
           <li>
@@ -448,7 +444,7 @@
       <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
 
         <!-- Contact details -->
-        <h5 class="font-weight-bold text-uppercase mb-4">Address</h5>
+        <h5 class="font-weight-bold text-uppercase mb-4" style="color: black;">Address</h5>
 
         <ul class="list-unstyled">
           <li>
@@ -478,23 +474,23 @@
       <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
 
         <!-- Social buttons -->
-        <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
+        <h5 class="font-weight-bold text-uppercase mb-4" style="color: black;">Follow Us</h5>
 
         <!-- Facebook -->
         <a type="button" class="btn-floating btn-fb">
-          <a href="#" style="color: darkblue" class="fa fa-facebook fa-2x text-decoration-none y"></a>
+          <a href="https://www.facebook.com" style="color: darkblue" class="fa fa-facebook fa-2x text-decoration-none y"></a>
         </a>
         <!-- Twitter -->
-        <a href="https://www.facebook.com" type="button"  class="btn-floating btn-tw">
-          <a href="#" style="color: red;" class="fa fa-google fa-2x text-decoration-none y"></a>
+        <a type="button"  class="btn-floating btn-tw">
+          <a href="https://www.google.com" style="color: red;" class="fa fa-google fa-2x text-decoration-none y"></a>
         </a>
         <!-- Google +-->
         <a type="button" class="btn-floating btn-gplus">
-          <a href="#" style="color: purple;" class="fa fa-instagram fa-2x text-decoration-none y"></a>
+          <a href="https://www.instagram.com" style="color: purple;" class="fa fa-instagram fa-2x text-decoration-none y"></a>
         </a>
         <!-- Dribbble -->
         <a type="button" class="btn-floating btn-dribbble">
-          <a href="#" style="color: black;" class="fa fa-twitter fa-2x text-decoration-none "></a>
+          <a href="https://www.twitter.com" style="color: black;" class="fa fa-twitter fa-2x text-decoration-none "></a>
         </a>
 
       </div>
@@ -516,7 +512,7 @@
 
 
 <!-- hover effect animatin -->
-  <script>
+  <!-- <script>
     $(document).ready(function(){
       $('.col-lg-3 col-md-3 col-sm-3').hover(
         function(){
@@ -533,8 +529,12 @@
       );
 
     });
-  </script>
+  </script> -->
      
+  <script src="../static/JS/main.js"></script>
+     <script src="../static/JS/cartjs.js"></script>
 
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+     
 </body>
 </html>

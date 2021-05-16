@@ -1,9 +1,7 @@
 <!DOCTYPE html>
-<!-- Created By CodingNepal -->
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <!-- <title>Login & Signup Form | CodingNepal</title> -->
     <link rel="stylesheet" href="../static/CSS/login.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -39,7 +37,7 @@ Signup Form</div>
 <div class="field btn">
               <div class="btn-layer">
 </div>
-<input type="submit" value="Login" onsubmit="Loginform()">
+<input type="submit" value="Login"  onsubmit="Loginform()">
             </div>
 <div class="signup-link">
 Not a member? <a href="">Signup now</a></div>
@@ -89,30 +87,6 @@ Not a member? <a href="">Signup now</a></div>
         signupBtn.click();
         return false;
       });
-<!--      function Loginform(){-->
-<!--      var email=document.getElementById('email').value;-->
-<!--      if(email.indexOf('@')<=0){-->
-<!--      alert("invalid @ position");-->
-<!--      return false;-->
-<!--      }-->
-<!--      if((email.charAt(email.length-4)!='.') && (email.charAt(email.length-3)!='.')){-->
-<!--      alert("invalid . position");-->
-<!--      return false;-->
-<!--      }-->
-<!--      var Password=document.getElementById('password');-->
-<!--      if(Password.value.trim()==""){-->
-<!--      alert("Password should not be blank");-->
-<!--      return false;-->
-<!--      }-->
-<!--      if(Password.value.length<5){-->
-<!--      alert("Password should be minimum 5 characters");-->
-<!--      return false;-->
-<!--      }-->
-<!--      if(Password.value.length>12){-->
-<!--      alert("Password should be maximum 12 characters");-->
-<!--      return false;-->
-<!--      }-->
-<!--      }-->
       function Sign_Up_form(){
       var email=document.getElementById('mail').value;
       if(email.indexOf('@')<=0){
@@ -155,6 +129,8 @@ Not a member? <a href="">Signup now</a></div>
       return false;
       }
       }
+
+     
 </script>
   </body>
 </html>

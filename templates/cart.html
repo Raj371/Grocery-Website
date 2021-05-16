@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="../static/CSS/cartstyle.css">
+</head>
+<body>
+    <h1 align="center">YOUR CART </h1>
+    <div id="flex">
+    </div>
+    <div id='flexs'></div>
+    <div class="container3">
+    <button onclick="order()" class="button">Order Now</button>
+    </div>
+    <script src="../static/JS/cartjs.js"></script>
+    <script>
+        function order(){
+    alert("You have successfully ordered and items would be delivered within 1- 2 days ");
+    window.location.href="/Grocery1";
+    console.log(myObj);
+
+    $.ajax({
+        type:'POST',
+        url:'/insert',
+        data:JSON.stringify({'text':myObj}),
+        contentType:"application/json; charset=utf-8"
+    });
+    console.log(myObj);
+    };
+</script>
+
+</body>
+</html>
+
