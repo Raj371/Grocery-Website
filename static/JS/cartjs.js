@@ -52,9 +52,31 @@ catch(e)
 {
   console.log(e);
 }
+function order(){
+  alert("You have successfully ordered and items would be delivered within 1- 2 days ");
+  // window.location.href="/Grocery1";
+  $.ajax({
+      type:'POST',
+      url:'/order',
+      data:{},
+      contentType:"application/json; charset=utf-8"
+  });
+  console.log("order items" );
+  };
 
 function deleteNote(index) {
   //   console.log("I am deleting", index);
+  console.log(index)
+  
+  $.ajax({
+    type:'POST',
+    url:'/delete',
+    data:JSON.stringify({'index':index}),
+    contentType:"application/json; charset=utf-8"
+  }
+  );
+
+  console.log("raj")
 
   let notes = localStorage.getItem("notes");
   if (notes == null) {
@@ -100,6 +122,7 @@ function deleteNote(index) {
 ;
   });
   a=`<div class="cartfruitmr">Total amount is ${a} Rs</div>`;
+  try{
   let flex = document.getElementById("flex");
   let flexs = document.getElementById("flexs");
   if (notesObj.length != 0) {
@@ -108,6 +131,10 @@ function deleteNote(index) {
   } else {
     flex.innerHTML ="Nothing to show! Use Add a Note section above to add notes.";
       flexs.innerHTML="Total amount is 0";
+  }
+  }
+  catch(e){
+    console.log(e);
   }
 }
 

@@ -39,4 +39,3 @@ quan: productQuan.value
     });
        
 };
-

@@ -1,5 +1,5 @@
 .bgnav{
-    background-color: gray;
+    background-color: navy;
     color: white;;
 }
 .a2{
@@ -113,4 +113,10 @@ body{
     .searchres{
         width: 250px;
     }    
+}
+@media only screen and (max-width:580px)
+{
+    .name{
+        display: none;
+    }   
 }

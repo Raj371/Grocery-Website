@@ -18,19 +18,7 @@
     </div>
     <script src="../static/JS/cartjs.js"></script>
     <script>
-        function order(){
-    alert("You have successfully ordered and items would be delivered within 1- 2 days ");
-    window.location.href="/Grocery1";
-    console.log(myObj);
-
-    $.ajax({
-        type:'POST',
-        url:'/insert',
-        data:JSON.stringify({'text':myObj}),
-        contentType:"application/json; charset=utf-8"
-    });
-    console.log(myObj);
-    };
+        
 </script>
 
 </body>
