@@ -147,7 +147,7 @@ def delete():
         index=request.get_json('index')
         ind=(int)(index['index'])
         email=session['email']
-        mycursor.execute("delete from carts where email='" + email +" and id="+str(ind)+"'")
+        mycursor.execute("delete from carts where email='" + email +"' and id='"+str(ind)+"'")
 #        mycursor.execute("Delete from carts where email=(%s) and id=(%d}",(email,ind))     
         print("deleted: ",ind)
     mydb.commit()

@@ -72,9 +72,15 @@ function deleteNote(index) {
     type:'POST',
     url:'/delete',
     data:JSON.stringify({'index':index}),
-    contentType:"application/json; charset=utf-8"
+    contentType:"application/json; charset=utf-8",
+    success:function(response){
+      console.log("success");
+    setTimeout(window.location.href='/Cart',500);
+    }
+
   }
   );
+
 
   console.log("raj")
 
