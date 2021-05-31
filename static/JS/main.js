@@ -4,7 +4,6 @@ for (i = 0; i < addbtn.length; i++) {
     addbtn[i].addEventListener("click",upfunc)
 };
 function upfunc(e){
-    alert("item has been added to the cart");
         let addToCartBtn = e.target;
         productContainer = addToCartBtn.parentElement.parentElement;
         productTitle = productContainer.getElementsByClassName('responsive1')[0].innerText;

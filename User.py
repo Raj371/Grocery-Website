@@ -7,6 +7,11 @@ app.secret_key="Raj Project"
 @app.route('/')
 def signUp():
     return render_template("Login.html")
+
+@app.route('/Logout')
+def Logout():
+    session.pop('email')
+    return render_template("Login.html")
     
 @app.route('/result',methods=['POST','GET'])
 def login():
@@ -79,6 +84,23 @@ def snacks():
         return render_template("Snacks.html")
     return render_template("Login.html")
 
+@app.route('/About')
+def About():
+    if "email" in session:
+        return render_template("About.html")
+    return render_template("Login.html")
+
+@app.route('/Privacy')
+def Privacy():
+    if "email" in session:
+        return render_template("PrivacyPolicy.html")
+    return render_template("Login.html")
+
+@app.route('/Terms')
+def Terms():
+    if "email" in session:
+        return render_template("TermsConditions.html")
+    return render_template("Login.html")
 ##############
 @app.route('/Cart')
 def cart():
@@ -95,7 +117,7 @@ def cart():
         data = mycursor.fetchall()
         r=mycursor.rowcount
         datas={}
-        desc="YOU HAVE NOT ADDED ANY ITEM IN THE CART"
+        desc="YOU HAVE NOT ADDED ANY ITEM IN YOUR CART"
         datas['info']=data
         if(mycursor.rowcount>0):
             return render_template("newCart.html",datas=datas)
@@ -114,7 +136,6 @@ def insert():
             database="grocery_user"
         
         )
-        print(mydb.is_connected())
         mycursor=mydb.cursor()
         if(request.method=='POST'):
             print(request.data)
@@ -168,5 +189,18 @@ def order():
     if(request.method=='POST'):
         email=session['email']
         print(email+"hello")
+        mycursor.execute("Select * from carts where email='"+email+"'")
+        data=mycursor.fetchall()
+        for i in data:
+            email=session["email"]
+            title=i[2]
+            price=(int)(i[3])
+            imgsrc=i[4]
+            quan=i[5]
+            mycursor.execute("insert into ordered(email,title,price,imgsrc,quantity)values(%s,%s,%s,%s,%s)",(email,title,price,imgsrc,quan))
+            mycursor.execute("delete from carts where email='"+email+"'")
+            print("complete")
+        mydb.commit()
+        mycursor.close()
     return " ordered successfull"
 app.run(debug=True)

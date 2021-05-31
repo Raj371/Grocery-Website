@@ -37,7 +37,7 @@
         </ul>
         
         <br>
-        <button onclick="change()" style="font-size:20px; background-color: orange;color: white;padding:8px 16px;"  class="cart">Logout</button>
+        <a href="/Logout"><button  style="font-size:20px; background-color: orange;color: white;padding:8px 16px;"  class="cart">Logout</button></a>
         
      </div>
     </div>
@@ -51,7 +51,7 @@
     <table class="table" width=100%>
       <thead class="thead-dark">
         <tr>
-            <th>ID</th>
+            
             <th>TITLE</th>
             <th>QUANTITY</th>
             <th>PRICE</th>
@@ -61,7 +61,7 @@
     <tbody>
     {% for data in datas['info'] %}
         <tr style="padding-top: 50px;">
-            <td>{{data[0]}}</td>
+            
             <td>{{data[2]}}</td>
             <td>{{data[5]}}</td>
             <td>{{data[3]}}</td>

@@ -59,7 +59,11 @@ function order(){
       type:'POST',
       url:'/order',
       data:{},
-      contentType:"application/json; charset=utf-8"
+      contentType:"application/json; charset=utf-8",
+      success:function(response){
+        console.log("success");
+      setTimeout(window.location.href='/Grocery1',500);
+      }
   });
   console.log("order items" );
   };
