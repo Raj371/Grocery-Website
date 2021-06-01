@@ -115,10 +115,15 @@ def cart():
         email=session['email']
         mycursor.execute("select * from carts where email='" + email +"'")
         data = mycursor.fetchall()
+        sum=0
+        for i in data:
+            sum+=int(i[3])
         r=mycursor.rowcount
         datas={}
         desc="YOU HAVE NOT ADDED ANY ITEM IN YOUR CART"
         datas['info']=data
+        datas['sum']=sum
+        print(sum)
         if(mycursor.rowcount>0):
             return render_template("newCart.html",datas=datas)
         return render_template("EmptyCart.html",desc=desc)

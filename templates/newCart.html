@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layout</title>
+    <title>Cart</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
@@ -50,17 +50,18 @@
   <div class="container" style="margin-top: 20px;margin-bottom: 20px;">
     <table class="table" width=100%>
       <thead class="thead-dark">
-        <tr>
+        <tr class="table-dark">
             
             <th>TITLE</th>
             <th>QUANTITY</th>
             <th>PRICE</th>
             <th>IMAGE</th>
+            <th>Delete</th>
         </tr>
     </thead>
     <tbody>
     {% for data in datas['info'] %}
-        <tr style="padding-top: 50px;">
+        <tr style="align-items: center;">
             
             <td>{{data[2]}}</td>
             <td>{{data[5]}}</td>
@@ -72,6 +73,8 @@
     {% endfor %} 
     </tbody>   
     </table>
+    <h1>Total Amount : <span>&#8377;</span>{{datas['sum']}}</h1>
+    <br><br>
     <button style="display: flex;justify-content: center; margin:0 auto; background-color: orange;color: white;padding:8px 16px; text-align: center;" onclick="order()">Order Now</button>
 </div>
 
