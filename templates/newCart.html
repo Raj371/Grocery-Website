@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../static/CSS/style.css">
     </head>
-<body>
+    <body>
     
   <nav class="navbar navbar-expand-lg navbar-light bgnav">
     <div class="container-fluid">
@@ -73,9 +73,9 @@
     {% endfor %} 
     </tbody>   
     </table>
-    <h1>Total Amount : <span>&#8377;</span>{{datas['sum']}}</h1>
+    <h1 style="text-align: center;">Total Amount : <span>&#8377;</span>{{datas['sum']}}</h1>
     <br><br>
-    <button style="display: flex;justify-content: center; margin:0 auto; background-color: orange;color: white;padding:8px 16px; text-align: center;" onclick="order()">Order Now</button>
+    <a class="order" href="/Shipping" type="button" style="  display: flex;justify-content: center;text-decoration: none; background-color: orange;color: white;padding:8px 16px; text-align: center;" onclick="order()">Order Now</a>
 </div>
 
 

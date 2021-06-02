@@ -1,3 +1,4 @@
+from logging import shutdown
 from flask import Flask , render_template , request ,session
 import mysql.connector
 import json
@@ -58,6 +59,36 @@ def display():
         
     mydb.commit()
     mycursor.close()
+
+@app.route('/ShippingDetails', methods=["POST"])
+def details():
+    mydb = mysql.connector.connect(
+        host="localhost",
+        user="root",
+        password="",
+        database="grocery_user"
+    )
+    mycursor = mydb.cursor()
+    if request.method=='POST':
+        Shipping=request.form
+        email=session['email']
+        fname=Shipping['fname']
+        lname=Shipping['lname']
+        address=Shipping['address']
+        country=Shipping['country']
+        zip=Shipping['zip']
+        state=Shipping['state']    
+        city=Shipping['city']
+        print(fname)
+        mycursor.execute("insert into shipping_details(Fname,Lname,Address,Country,Zip,State,City,email)values(%s,%s,%s,%s,%s,%s,%s,%s)",(fname,lname,address,country,zip,state,city,email))
+        print(lname)
+    mydb.commit()
+    mycursor.close()
+    return "success"
+
+@app.route('/Shipping')
+def Shipping():
+    return render_template('Shipping.html')
 @app.route('/Grocery1')
 def grocery():
     if "email" in session:
