@@ -4,6 +4,9 @@ import mysql.connector
 import json
 
 app=Flask(__name__)
+
+
+
 app.secret_key="Raj Project"
 @app.route('/')
 def signUp():
@@ -84,7 +87,7 @@ def details():
         print(lname)
     mydb.commit()
     mycursor.close()
-    return "success"
+    return render_template('Grocery1.html')
 
 @app.route('/Shipping')
 def Shipping():
