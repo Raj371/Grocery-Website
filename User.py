@@ -1,5 +1,5 @@
 from logging import shutdown
-from flask import Flask , render_template , request ,session
+from flask import Flask , render_template , request ,session, redirect,url_for
 import mysql.connector
 import json
 
@@ -10,6 +10,8 @@ app=Flask(__name__)
 app.secret_key="Raj Project"
 @app.route('/')
 def signUp():
+    if "email" in session:
+        return redirect(url_for('grocery'))
     return render_template("Login.html")
 
 @app.route('/Logout')
@@ -58,7 +60,7 @@ def display():
             print(session['email'])
             return render_template("Grocery1.html")
         else:
-            return render_template("Login.html")
+            return redirect(url_for('login'))
         
     mydb.commit()
     mycursor.close()
@@ -91,50 +93,51 @@ def details():
 
 @app.route('/Shipping')
 def Shipping():
-    return render_template('Shipping.html')
+    if "email" in session:
+        return render_template('Shipping.html')
+    return redirect(url_for('login'))
 @app.route('/Grocery1')
 def grocery():
     if "email" in session:
         return render_template("Grocery1.html")
-    return render_template("Login.html")
+    return redirect(url_for('login'))
 @app.route('/Fruits')
 def fruits():
     if "email" in session:
         return render_template("Fruits.html")
-    return render_template("Login.html")
+    return redirect(url_for('login'))
 @app.route('/Vegetables')
 def vegetables():
     if "email" in session:
         return render_template("Vegetables.html")
-    return render_template("Login.html")
+    return redirect(url_for('login'))
 @app.route('/Beverages')
 def beverages():
     if "email" in session:
         return render_template("Beverages.html")
-    return render_template("Login.html")
+    return redirect(url_for('login'))
 @app.route('/Snacks')
 def snacks():
     if "email" in session:
         return render_template("Snacks.html")
-    return render_template("Login.html")
-
+    return redirect(url_for('login'))
 @app.route('/About')
 def About():
     if "email" in session:
         return render_template("About.html")
-    return render_template("Login.html")
+    return redirect(url_for('login'))
 
 @app.route('/Privacy')
 def Privacy():
     if "email" in session:
         return render_template("PrivacyPolicy.html")
-    return render_template("Login.html")
+    return redirect(url_for('login'))
 
 @app.route('/Terms')
 def Terms():
     if "email" in session:
         return render_template("TermsConditions.html")
-    return render_template("Login.html")
+    return redirect(url_for('login'))
 ##############
 @app.route('/Cart')
 def cart():
@@ -162,7 +165,7 @@ def cart():
             return render_template("newCart.html",datas=datas)
         return render_template("EmptyCart.html",desc=desc)
         mycursor.close()
-    return render_template("Login.html")
+    return redirect(url_for('login'))
 
 #####################
 @app.route('/insert',methods=["POST","GET"])
@@ -242,4 +245,5 @@ def order():
         mydb.commit()
         mycursor.close()
     return " ordered successfull"
+    
 app.run(debug=True)
